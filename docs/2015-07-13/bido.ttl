@@ -1,0 +1,60 @@
+@prefix : <http://purl.org/spar/bido/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+<http://purl.org/spar/bido> a owl:Ontology ;
+    rdfs:label "BiDO" ;
+    dc:creator "Enrico Motta",
+        "Francesco Osborne",
+        "Silvio Peroni" ;
+    dc:date "2015-07-13" ;
+    dc:description :bido.png,
+        """The Bibliometric Data Ontology (BiDO) is a modular OWL 2 ontology that allows the description of bibliometric data in RDF. 
+
+It is composed by three distinct ontological modules.
+
+The core module of the ontology allows us to describe any entity and the related bibliometric data (through the property holdsBibliometricDataInTime) at a certain time (i.e., tvc:atTime, a property defined by the imported TVC ontology for specifying temporal instants or intervals) and according to a certain agent (through the property accordingTo, which is a sub-property of prov:wasAttributedTo and allows us to indicate the agent responsible for such bibliometric data). 
+
+Two alternative kinds of bibliometric data are specifiable (through the property withBibliometricData) in BiDO: numeric and categorial bibliometric data. 
+
+Numeric bibliometric data are those characterised by a certain integer or float value related to a particular bibliometric measure. Some of these measures – i.e., h-index, author citation count, e-index, and journal impact factor – are available in a particular module of BiDO responsible for describing the most common bibliometric measures.
+
+BiDO extends the class CategorialBibliometricData of the core module with specific categories describing the research career of people. These categories are described by the class ResearchCareerCategory, which is characterised by four specific dimensions.
+
+Another module, called Review Measures, extends both the numeric and categorial bibliometric data in order to keep track of information related to the review process in academic venues."""@en ;
+    dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)." ;
+    dc:title "The Bibliometric Data Ontology (BiDO)" ;
+    rdfs:comment """The Bibliometric Data Ontology (BiDO) is a modular ontology that allows the description of numerical and categorical bibliometric data (e.g., journal impact factor, author h-index, categories describing research careers) in RDF.
+
+**URL:** http://purl.org/spar/bido
+
+**Creators**: [Enrico Motta](https://orcid.org/0000-0003-0015-1952), [Francesco Osborne](https://orcid.org/0000-0001-6557-3131), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/bido
+
+**Cite as:** Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf""" ;
+    owl:imports <http://purl.org/spar/bido-research-career-category>,
+        <http://purl.org/spar/bido-review-measures>,
+        <http://purl.org/spar/bido-standard-bibliometric-measures> ;
+    owl:priorVersion <https://svn.code.sf.net/p/sempublishing/code/BiDO/bido-2014-08-11_1-1.owl> ;
+    owl:versionIRI <http://purl.org/spar/bido/2015-07-13> ;
+    owl:versionInfo 1.2 .
+
+owl:Thing a owl:Class .
+
