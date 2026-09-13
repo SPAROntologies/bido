@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/Slope",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-research-career-activity a bido:ResearchCareerCategory ;\n        bido:hasSlope :my-slope .\n\n    :my-slope a bido:Slope ;\n        bido:hasStrength bido:low ;\n        bido:hasGrowth bido:logarithmic .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The slope of a curve, in terms of strength (low/moderate/high) and kind of growth (linear/polynomial/exponential/logarithmic)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-research-career-category/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "slope"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

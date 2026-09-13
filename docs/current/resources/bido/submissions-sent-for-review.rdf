@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="N686974cb2e5143fb80d0da569070deea">
+    <owl:allValuesFrom rdf:nodeID="Na4ecef42d3ba4339956c910dece174ea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N5040817ae61d4a4f893222e8d2ef8a1c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24def708828848a19dc61ed4a9cceba7">
+    <owl:onProperty rdf:nodeID="N06e6cf2b096341e3b93d75f82d94df27"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N7c0f25dcd3664d6c97d843de7c86801f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/submissions-sent-for-review">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="N24def708828848a19dc61ed4a9cceba7"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-academic-event a swc:AcademicEvent ;
+        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-numeric-bibliometric-data .
+
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:submissions-sent-for-review ;
+        bido:hasNumericValue "200"^^xsd:float .
+    </vann:example>
+    <rdfs:comment xml:lang="en">The number of submitted papers assigned to reviewers for revision.</rdfs:comment>
+    <rdfs:label xml:lang="en">number of submission sent for review</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N06e6cf2b096341e3b93d75f82d94df27">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7c0f25dcd3664d6c97d843de7c86801f">
+    <owl:allValuesFrom rdf:nodeID="N686974cb2e5143fb80d0da569070deea"/>
+    <owl:onProperty rdf:nodeID="Ndc736f4733464430b5ed6f688e151b39"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndc736f4733464430b5ed6f688e151b39">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5040817ae61d4a4f893222e8d2ef8a1c">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc504437f28b342e89416114b4501d343">
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <rdf:rest rdf:nodeID="Ne367cf7002d24760a45b1f89cc03b845"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na4ecef42d3ba4339956c910dece174ea">
+    <owl:unionOf rdf:nodeID="Nc504437f28b342e89416114b4501d343"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne367cf7002d24760a45b1f89cc03b845">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+</rdf:RDF>

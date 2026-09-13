@@ -1,0 +1,36 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/flat",
+    "@type": [
+      "http://purl.org/spar/bido/Trend",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-research-category a bido:ResearchCareerCategory ;\n        bido:hasCurve :my-curve .\n\n    :my-curve a bido:Curve ;\n        bido:hasTrend bido:flat .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A constant trend characterising the curve."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-research-career-category/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "flat"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

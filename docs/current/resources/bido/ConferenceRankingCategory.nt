@@ -1,0 +1,16 @@
+_:Nd05f3d54ffbf47b1aacac8ddc29570ab <http://www.w3.org/2002/07/owl#onProperty> _:Na1895b289ff1463a8fa758b40c460383 .
+_:Nd05f3d54ffbf47b1aacac8ddc29570ab <http://www.w3.org/2002/07/owl#allValuesFrom> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:N4e091161d1d9429795e4c3e0f10b3991 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Ne675299577db4cd1b346692f079595da <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:core-a .\n\n    bido:core-a a bido:ConferenceRankingCategory .\n    " .
+_:N4e091161d1d9429795e4c3e0f10b3991 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nd05f3d54ffbf47b1aacac8ddc29570ab .
+_:N4e091161d1d9429795e4c3e0f10b3991 <http://www.w3.org/2002/07/owl#onProperty> _:Ne675299577db4cd1b346692f079595da .
+_:Nd05f3d54ffbf47b1aacac8ddc29570ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N4e091161d1d9429795e4c3e0f10b3991 .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#label> "conference ranking category"@en .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A category that can be used for ranking a conference according to the related ranking that defines it."@en .
+<http://purl.org/spar/bido/ConferenceRankingCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+_:Na1895b289ff1463a8fa758b40c460383 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .

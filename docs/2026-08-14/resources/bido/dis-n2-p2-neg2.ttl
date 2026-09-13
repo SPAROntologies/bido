@@ -1,0 +1,30 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bido:dis-n2-p2-neg2 a bido:ReviewRatingValue,
+        owl:NamedIndividual ;
+    rdfs:label "-2 on a [-2,2] scale (Discrete -2 to 2 review rating scale)"@en ;
+    bido:hasRatingValue "-2"^^xsd:int ;
+    bido:isDefinedIn bido:dis-n2-p2 ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:dis-n2-p2-neg2 .
+    """ ;
+    rdfs:comment "The value -2 in a discrete scale from -2 to 2 for review rating."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    vs:term_status reg:statusStable ;
+    skos:closeMatch bido:a-na-wr-napp,
+        bido:a-r-ts-rej,
+        bido:dis-0-10-0,
+        bido:dis-0-5-0,
+        bido:sa-sr-bl-srej,
+        bido:sa-sr-nb-srej .
+

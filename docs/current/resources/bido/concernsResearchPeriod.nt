@@ -1,0 +1,8 @@
+<http://purl.org/spar/bido/concernsResearchPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-research-career-category/> .
+<http://purl.org/spar/bido/concernsResearchPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "concerns research period"@en .
+<http://purl.org/spar/bido/concernsResearchPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/concernsResearchPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<http://purl.org/spar/bido/concernsResearchPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a research career category and the research period that caracterises it."@en .
+<http://purl.org/spar/bido/concernsResearchPeriod> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/concernsResearchPeriod> <http://purl.org/vocab/vann/example> "\n    :my-research-category a bido:ResearchCareerCategory ;\n        bido:concernsResearchPeriod bido:5-years-beginning .\n\n    bido:5-years-beginning a time:Interval .\n    " .
+<http://purl.org/spar/bido/concernsResearchPeriod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ResearchCareerCategory> .

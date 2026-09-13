@@ -1,0 +1,30 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bido:hasNumericValue a owl:DatatypeProperty ;
+    rdfs:label "has numeric value"@en ;
+    vann:example """
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasNumericValue "2.464"^^xsd:float .
+    """ ;
+    rdfs:comment "The actual value of the bibliometric data in consideration."@en ;
+    rdfs:domain bido:NumericBibliometricData ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:float xsd:integer ) ],
+        [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:float xsd:integer ) ],
+        [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:float xsd:integer ) ],
+        [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:float xsd:integer ) ],
+        [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:float xsd:integer ) ] ;
+    vs:term_status reg:statusStable .
+

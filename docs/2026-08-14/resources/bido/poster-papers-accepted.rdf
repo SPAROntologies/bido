@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="N0ee34a12924549dd9fd57f99b52f3959">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N9586af09e0c74ef3940a487f5c2e6b7d"/>
+    <owl:onProperty rdf:nodeID="N2facde55dc2946cb89776622eda86c7e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9586af09e0c74ef3940a487f5c2e6b7d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Nec2ed87594cc4b6a8302761662ff7fb7"/>
+    <owl:allValuesFrom rdf:nodeID="N7cc4871ad56d453f94e248efc1b759d1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncffb8990f2ac481ba22244dc0865eb63">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7cc4871ad56d453f94e248efc1b759d1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="Nb7fc37eb6f2447299978e0395f376575"/>
+    <owl:onProperty rdf:nodeID="Ne7d1c22f9e0c45bca7c212df9eb94dbb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/poster-papers-accepted">
+    <rdf:type rdf:nodeID="N0ee34a12924549dd9fd57f99b52f3959"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <rdfs:label xml:lang="en">number of poster paper accepted</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-academic-event a swc:AcademicEvent ;
+        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-numeric-bibliometric-data .
+
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:poster-papers-accepted ;
+        bido:hasNumericValue "25"^^xsd:float .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A measure indicating how many poster papers has been accepted for publication/presentation in the venue.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb7fc37eb6f2447299978e0395f376575">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nfa1ca26c6cf843cbaa3d1a1bda2f6163"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec2ed87594cc4b6a8302761662ff7fb7">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne7d1c22f9e0c45bca7c212df9eb94dbb">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfa1ca26c6cf843cbaa3d1a1bda2f6163">
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <rdf:rest rdf:nodeID="Ncffb8990f2ac481ba22244dc0865eb63"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2facde55dc2946cb89776622eda86c7e">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+</rdf:RDF>

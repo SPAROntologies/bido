@@ -1,0 +1,8 @@
+<http://purl.org/spar/bido/BibliometricData> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/BibliometricData> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data." .
+<http://purl.org/spar/bido/BibliometricData> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data."@en .
+<http://purl.org/spar/bido/BibliometricData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/BibliometricData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-core/> .
+<http://purl.org/spar/bido/BibliometricData> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-bibliometric-data .\n\n    :my-bibliometric-data a bido:BibliometricData .\n    " .
+<http://purl.org/spar/bido/BibliometricData> <http://www.w3.org/2000/01/rdf-schema#label> "bibliometric data"@en .
+<http://purl.org/spar/bido/BibliometricData> <http://www.w3.org/2000/01/rdf-schema#label> "bibliometric data" .

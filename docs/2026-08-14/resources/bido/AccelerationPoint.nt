@@ -1,0 +1,26 @@
+_:N5bc4f1e501744f93a02c9e049ed8051f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/bido/decreasing> .
+<http://purl.org/spar/bido/AccelerationPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nc75a7fc616b548759b7e430532dfa881 .
+<http://purl.org/spar/bido/AccelerationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "The acceleration or deceleration point (none or premature, median, overdue acceleration/deceleration) of the curve, if any."@en .
+_:Nc75a7fc616b548759b7e430532dfa881 <http://www.w3.org/2002/07/owl#onProperty> _:N9329eba52cb5405096cd085fd65e28d8 .
+_:Nc75a7fc616b548759b7e430532dfa881 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N3cf224855457484e862f57556dd1de55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/bido/increasing> .
+<http://purl.org/spar/bido/AccelerationPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-research-career-category/> .
+_:N7d506fb41879493c89232c7fdd7c115f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N9329eba52cb5405096cd085fd65e28d8 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasAccelerationPoint> .
+_:Nb1a20df5c6b1452191ff28d2eda42ef6 <http://www.w3.org/2002/07/owl#oneOf> _:N3cf224855457484e862f57556dd1de55 .
+_:Nc75a7fc616b548759b7e430532dfa881 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Ne68cc99079ba4971adabac80a1e61082 .
+_:Ne68cc99079ba4971adabac80a1e61082 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/AccelerationPoint> <http://purl.org/vocab/vann/example> "\n    :my-research-career-activity a bido:ResearchCareerCategory ;\n        bido:hasCurve :my-curve .\n\n    :my-curve a bido:Curve ;\n        bido:hasAccelerationPoint bido:premature-deceleration .\n\n    bido:premature-deceleration a bido:AccelerationPoint .\n    " .
+_:N5bc4f1e501744f93a02c9e049ed8051f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N55bb7b6f5cbb411a956c65689cb29f31 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/spar/bido/hasTrend> .
+_:N55bb7b6f5cbb411a956c65689cb29f31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Ne68cc99079ba4971adabac80a1e61082 <http://www.w3.org/2002/07/owl#intersectionOf> _:N22836a40f5cc49a988ea29d6e4f0fbd4 .
+_:N3cf224855457484e862f57556dd1de55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N5bc4f1e501744f93a02c9e049ed8051f .
+<http://purl.org/spar/bido/AccelerationPoint> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:N55bb7b6f5cbb411a956c65689cb29f31 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nb1a20df5c6b1452191ff28d2eda42ef6 .
+_:Nb1a20df5c6b1452191ff28d2eda42ef6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/AccelerationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N22836a40f5cc49a988ea29d6e4f0fbd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N7d506fb41879493c89232c7fdd7c115f .
+<http://purl.org/spar/bido/AccelerationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "acceleration point"@en .
+_:N22836a40f5cc49a988ea29d6e4f0fbd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/bido/Curve> .
+_:N7d506fb41879493c89232c7fdd7c115f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:N55bb7b6f5cbb411a956c65689cb29f31 .

@@ -1,0 +1,7 @@
+<http://purl.org/spar/bido/exponential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/Growth> .
+<http://purl.org/spar/bido/exponential> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-research-career-category/> .
+<http://purl.org/spar/bido/exponential> <http://www.w3.org/2000/01/rdf-schema#comment> "An exponential growth pattern characterising the slope of the curve."@en .
+<http://purl.org/spar/bido/exponential> <http://purl.org/vocab/vann/example> "\n    :my-research-category a bido:ResearchCareerCategory ;\n        bido:hasSlope :my-slope .\n\n    :my-slope a bido:Slope ;\n        bido:hasGrowth bido:exponential .\n    " .
+<http://purl.org/spar/bido/exponential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/exponential> <http://www.w3.org/2000/01/rdf-schema#label> "exponential"@en .
+<http://purl.org/spar/bido/exponential> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

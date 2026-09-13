@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="N5a4632d2cb734412a348f086f6c6edec">
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasNumericValue"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/NumericBibliometricData">
+    <rdfs:subClassOf rdf:nodeID="Nd41d6d67baf2496c9547845a40a61b1a"/>
+    <rdfs:subClassOf rdf:nodeID="Nd3a37081c98f4995b3f57d540cd30f7b"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/BibliometricData"/>
+    <rdfs:subClassOf rdf:nodeID="Na3bffdc80b734f8ebe3274065668cd08"/>
+    <rdfs:subClassOf rdf:nodeID="Nff8be8cb0fa54addac598c650fc21510"/>
+    <rdfs:subClassOf rdf:nodeID="Neda93115f0644a5db2be7ddb9095a9e9"/>
+    <rdfs:subClassOf rdf:nodeID="N8e0bbbe44b0c4332971bb0c93aa38fc4"/>
+    <rdfs:subClassOf rdf:nodeID="N2b1d157cd9b14f74925d661e166c9708"/>
+    <rdfs:subClassOf rdf:nodeID="N9ca443b8d3844f60851de24143747a40"/>
+    <rdfs:subClassOf rdf:nodeID="N2704b075ae964adcbc5cbc40950f46c3"/>
+    <rdfs:subClassOf rdf:nodeID="N5a4632d2cb734412a348f086f6c6edec"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
+    <rdfs:label xml:lang="en">numeric bibliometric data</rdfs:label>
+    <rdfs:comment xml:lang="en">Bibliometric data represented by numbers. Such numeric data are those characterised by a certain integer or float value related to a particular bibliometric measure.</rdfs:comment>
+    <vann:example>
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:journal-impact-factor ;
+        bido:hasNumericValue "2.464"^^xsd:float .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2704b075ae964adcbc5cbc40950f46c3">
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8e0bbbe44b0c4332971bb0c93aa38fc4">
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasNumericValue"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3bffdc80b734f8ebe3274065668cd08">
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd3a37081c98f4995b3f57d540cd30f7b">
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasNumericValue"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ca443b8d3844f60851de24143747a40">
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff8be8cb0fa54addac598c650fc21510">
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neda93115f0644a5db2be7ddb9095a9e9">
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2b1d157cd9b14f74925d661e166c9708">
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasNumericValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd41d6d67baf2496c9547845a40a61b1a">
+    <owl:onProperty rdf:resource="http://purl.org/spar/bido/hasNumericValue"/>
+    <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

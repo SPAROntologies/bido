@@ -1,0 +1,26 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bido:acl-1-5-acl5 a bido:ReviewerConfidenceValue,
+        owl:NamedIndividual ;
+    rdfs:label "5 out of 5 (Discrete 1 to 5 review rating scale)"@en ;
+    bido:hasConfidenceValue "5"^^xsd:int ;
+    bido:isDefinedIn bido:acl-1-5 ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:acl-1-5-acl5 .
+    """ ;
+    rdfs:comment "The value 5 in a discrete scale from 1 to 5 for review rating."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    vs:term_status reg:statusStable ;
+    skos:closeMatch bido:acl-1-5-acl5,
+        bido:ex-null-exp .
+

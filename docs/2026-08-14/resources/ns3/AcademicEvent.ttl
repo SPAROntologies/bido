@@ -1,0 +1,9 @@
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns3:AcademicEvent a owl:Class ;
+    rdfs:label "academic event" ;
+    rdfs:comment "Any academic event such as conferences, workshops, symposia." ;
+    rdfs:isDefinedBy ns3: .
+

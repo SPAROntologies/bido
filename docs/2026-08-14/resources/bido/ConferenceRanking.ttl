@@ -1,0 +1,26 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:ConferenceRanking a owl:Class ;
+    rdfs:label "conference ranking"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:core-a .
+
+    bido:core-a
+        bido:isDefinedIn bido:core-conference-ranking .
+    
+    bido:core-conference-ranking a bido:ConferenceRanking .
+    """ ;
+    rdfs:comment "A ranking involving conferences that is composed by categories identifying different rankings."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:subClassOf skos:ConceptScheme ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/ReviewerConfidenceScale",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:acl-1-5-acl1 .\n\n    bido:acl-1-5-acl1 a bido:ReviewerConfidenceValue ;\n        bido:isDefinedIn bido:acl-1-5 .\n\n    bido:acl-1-5 a bido:DiscreteReviewerConfidenceScale .\n\n    bido:DiscreteReviewerConfidenceScale rdfs:subClassOf bido:ReviewerConfidenceScale .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A scale defining the confidence of a reviewer for a given topic."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "reviewer confidence scale"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

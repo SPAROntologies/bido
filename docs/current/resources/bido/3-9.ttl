@@ -1,0 +1,18 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:3-9 a bido:OrderOfMagnitude,
+        owl:NamedIndividual ;
+    rdfs:label "[3,9)" ;
+    vann:example """
+    :my-research-category a bido:ResearchCareerCategory ;
+        bido:hasOrderOfMagnitude bido:3-9 .
+    """ ;
+    rdfs:comment "The citation interval between 3 (included) and 9 (excluded)."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    vs:term_status reg:statusStable .
+

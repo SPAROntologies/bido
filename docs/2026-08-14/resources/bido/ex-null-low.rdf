@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bido="http://purl.org/spar/bido/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ex-null-low">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewerConfidenceValue"/>
+    <bido:isDefinedIn rdf:resource="http://purl.org/spar/bido/ex-null"/>
+    <vann:example>
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:ex-null-low .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <rdfs:label xml:lang="en">Low (Expert to Null reviewer confidence scale)</rdfs:label>
+    <rdfs:comment xml:lang="en">The value 'Low' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence.</rdfs:comment>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/acl-1-5-acl2"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/ex-null-low"/>
+    <bido:hasConfidenceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bido:hasConfidenceValue>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+</rdf:RDF>

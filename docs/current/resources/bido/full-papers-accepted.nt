@@ -1,0 +1,26 @@
+_:Nf46b17cbb93a40d695744ba1250c3c3d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Na04e99ecb3864102935954b40ea58a33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N34402573de894298ac4552b48a4c89e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N38c0ef48ceb34d08a605305689aa902e <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:Na04e99ecb3864102935954b40ea58a33 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nda7fbda547784a72b7270a5abf6c5bdf .
+_:N7ada2105558a48068725a659dfe44921 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N34402573de894298ac4552b48a4c89e1 .
+<http://purl.org/spar/bido/full-papers-accepted> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:full-papers-accepted ;\n        bido:hasNumericValue \"30\"^^xsd:float .\n    " .
+_:N244267d2fe524e88afb8e8a270f39f62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N244267d2fe524e88afb8e8a270f39f62 <http://www.w3.org/2002/07/owl#unionOf> _:N7ada2105558a48068725a659dfe44921 .
+_:Nf46b17cbb93a40d695744ba1250c3c3d <http://www.w3.org/2002/07/owl#onProperty> _:N239c1f8f19c9463dacac9350cd91fff2 .
+_:Nf46b17cbb93a40d695744ba1250c3c3d <http://www.w3.org/2002/07/owl#allValuesFrom> _:N244267d2fe524e88afb8e8a270f39f62 .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure indicating how many full papers has been accepted for publication or presentation in the venue." .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:Na04e99ecb3864102935954b40ea58a33 .
+_:N34402573de894298ac4552b48a4c89e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#label> "number of full paper accepted" .
+_:Na04e99ecb3864102935954b40ea58a33 <http://www.w3.org/2002/07/owl#onProperty> _:N38c0ef48ceb34d08a605305689aa902e .
+_:Nda7fbda547784a72b7270a5abf6c5bdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N7ada2105558a48068725a659dfe44921 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:Nda7fbda547784a72b7270a5abf6c5bdf <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nf46b17cbb93a40d695744ba1250c3c3d .
+_:Nda7fbda547784a72b7270a5abf6c5bdf <http://www.w3.org/2002/07/owl#onProperty> _:Nd2cd1b4bd0ec4a9f928a69bbb17c43b3 .
+<http://purl.org/spar/bido/full-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:Nd2cd1b4bd0ec4a9f928a69bbb17c43b3 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N239c1f8f19c9463dacac9350cd91fff2 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .

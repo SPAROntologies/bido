@@ -1,0 +1,35 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:ResearchCareerCategory a owl:Class ;
+    rdfs:label "research career category"@en ;
+    vann:example """
+    :my-research-career-activity a bido:ResearchCareerCategory ;
+        bido:hasCurve :my-curve ;
+        bido:hasSlope :my-slope ;
+        bido:hasOrderOfMagnitude bido:243-729 ;
+        bido:concernsResearchPeriod bido:5-years-beginning .
+
+    :my-curve a bido:Curve ;
+        bido:hasTrend bido:increasing ;
+        bido:hasAccelerationPoint bido:premature-deceleration .
+
+    :my-slope a bido:Slope ;
+        bido:hasStrength bido:low ;
+        bido:hasGrowth bido:logarithmic .
+    """ ;
+    rdfs:comment "Bibliometric data that includes categories describing the research career of people. Each of such categories is characterised by four specific dimensions: the research period considered, the curve of the choosed citation distribution, the slope of such curve, and the order of magnitude of the citation of such research period."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom foaf:Person ;
+                    owl:onProperty [ owl:inverseOf bido:holdsBibliometricDataInTime ] ] ;
+            owl:onProperty [ owl:inverseOf bido:withBibliometricData ] ],
+        bido:CategorialBibliometricData ;
+    vs:term_status reg:statusStable .
+

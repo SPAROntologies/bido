@@ -1,0 +1,26 @@
+_:Na56868bef91840e1b3b98e09e7d5654f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nb941249f67c447f7a69523e3b5425ef7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N4193175ee83e43d9ad78f8e9270e7e6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:Na56868bef91840e1b3b98e09e7d5654f <http://www.w3.org/2002/07/owl#onProperty> _:Na068759c07c54fbbb006d5cef683b526 .
+_:N4193175ee83e43d9ad78f8e9270e7e6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:Nbde330f7f0d04100847f89c09cebebce <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure indicating how many external reviewers have been involved in the reviewing phase." .
+_:N375db898ec284cfea583afd2455fdb53 <http://www.w3.org/2002/07/owl#onProperty> _:N9664a14934574d86ace26a494e5b9e3a .
+_:N375db898ec284cfea583afd2455fdb53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N375db898ec284cfea583afd2455fdb53 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nb941249f67c447f7a69523e3b5425ef7 .
+_:Nc34070d62c36477ba4e556a817820abd <http://www.w3.org/2002/07/owl#onProperty> _:Nbde330f7f0d04100847f89c09cebebce .
+_:N917bb9bc7fe4435780bbb95e043182cb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:Nc34070d62c36477ba4e556a817820abd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Na56868bef91840e1b3b98e09e7d5654f <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nc34070d62c36477ba4e556a817820abd .
+_:Nc34070d62c36477ba4e556a817820abd <http://www.w3.org/2002/07/owl#allValuesFrom> _:N375db898ec284cfea583afd2455fdb53 .
+_:N9664a14934574d86ace26a494e5b9e3a <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:Na068759c07c54fbbb006d5cef683b526 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/2000/01/rdf-schema#label> "number of external reviewers involved" .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:external-reviews-involved ;\n        bido:hasNumericValue \"20\"^^xsd:float .\n    " .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/external-reviewers-involved> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:Na56868bef91840e1b3b98e09e7d5654f .
+_:N917bb9bc7fe4435780bbb95e043182cb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N4193175ee83e43d9ad78f8e9270e7e6f .
+_:Nb941249f67c447f7a69523e3b5425ef7 <http://www.w3.org/2002/07/owl#unionOf> _:N917bb9bc7fe4435780bbb95e043182cb .

@@ -1,0 +1,116 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/AccelerationPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-research-career-activity a bido:ResearchCareerCategory ;\n        bido:hasCurve :my-curve .\n\n    :my-curve a bido:Curve ;\n        bido:hasAccelerationPoint bido:premature-deceleration .\n\n    bido:premature-deceleration a bido:AccelerationPoint .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The acceleration or deceleration point (none or premature, median, overdue acceleration/deceleration) of the curve, if any."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-research-career-category/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "acceleration point"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:Nc75a7fc616b548759b7e430532dfa881"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc75a7fc616b548759b7e430532dfa881",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Ne68cc99079ba4971adabac80a1e61082"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N9329eba52cb5405096cd085fd65e28d8"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9329eba52cb5405096cd085fd65e28d8",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/bido/hasAccelerationPoint"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne68cc99079ba4971adabac80a1e61082",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/bido/Curve"
+          },
+          {
+            "@id": "_:N55bb7b6f5cbb411a956c65689cb29f31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N55bb7b6f5cbb411a956c65689cb29f31",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:Nb1a20df5c6b1452191ff28d2eda42ef6"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/bido/hasTrend"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb1a20df5c6b1452191ff28d2eda42ef6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/bido/increasing"
+          },
+          {
+            "@id": "http://purl.org/spar/bido/decreasing"
+          }
+        ]
+      }
+    ]
+  }
+]

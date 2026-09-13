@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/BibliometricMeasure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:journal-impact-factor .\n\n    bido:journal-impact-factor a bido:BibliometricMeasure .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Any kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor)."
+      },
+      {
+        "@value": "Any kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-core/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bibliometric measure"
+      },
+      {
+        "@language": "en",
+        "@value": "bibliometric measure"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

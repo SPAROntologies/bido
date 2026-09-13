@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:ConceptScheme a owl:Class ;
+    rdfs:label "concept scheme"@en ;
+    rdfs:comment "A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts."@en ;
+    rdfs:isDefinedBy skos: .
+

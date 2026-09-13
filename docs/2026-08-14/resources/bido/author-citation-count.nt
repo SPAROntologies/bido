@@ -1,0 +1,20 @@
+_:N3be916292d714fd69cb3eb910cb112ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-standard-bibliometric-measures/> .
+_:N3c80f8064cec4cd7ac09be4b709e62b5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N3a550c968a0e4b02b95d5ba151a1df12 .
+_:Naffc864f1e8040d7903d6aca4c06358a <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N9b0b548bd35b400d80aeeff95684e259 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:Nb29480a0be8a4c6e91db9faebb646e21 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N3c80f8064cec4cd7ac09be4b709e62b5 <http://www.w3.org/2002/07/owl#onProperty> _:Naffc864f1e8040d7903d6aca4c06358a .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N3a550c968a0e4b02b95d5ba151a1df12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#label> "author citation count" .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:N3c80f8064cec4cd7ac09be4b709e62b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N3a550c968a0e4b02b95d5ba151a1df12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N3be916292d714fd69cb3eb910cb112ab .
+_:N3be916292d714fd69cb3eb910cb112ab <http://www.w3.org/2002/07/owl#allValuesFrom> _:N3c80f8064cec4cd7ac09be4b709e62b5 .
+_:N3a550c968a0e4b02b95d5ba151a1df12 <http://www.w3.org/2002/07/owl#onProperty> _:N9b0b548bd35b400d80aeeff95684e259 .
+<http://purl.org/spar/bido/author-citation-count> <http://www.w3.org/2000/01/rdf-schema#comment> "The count of all the citation received by all the papers of a certain author." .
+<http://purl.org/spar/bido/author-citation-count> <http://purl.org/vocab/vann/example> "\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:author-citation-count ;\n        bido:hasNumericValue \"56\"^^xsd:integer .\n    " .
+_:N3be916292d714fd69cb3eb910cb112ab <http://www.w3.org/2002/07/owl#onProperty> _:Nb29480a0be8a4c6e91db9faebb646e21 .

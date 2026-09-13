@@ -1,0 +1,44 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/core-a-star",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ConferenceRankingCategory"
+    ],
+    "http://purl.org/spar/bido/isDefinedIn": [
+      {
+        "@id": "http://purl.org/spar/bido/core-conference-ranking"
+      }
+    ],
+    "http://purl.org/spar/bido/isHigherThan": [
+      {
+        "@id": "http://purl.org/spar/bido/core-a"
+      }
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:core-a-star .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The CORE category for a flagship conference, a leading venue in a discipline area."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A*"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

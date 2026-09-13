@@ -1,0 +1,27 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:h-index a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom foaf:Person ;
+                            owl:onProperty [ owl:inverseOf bido:holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf bido:withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf bido:hasMeasure ] ],
+        bido:BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "h-index" ;
+    vann:example """
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:h-index ;
+        bido:hasNumericValue "8"^^xsd:integer .
+    """ ;
+    rdfs:comment "An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures/> ;
+    vs:term_status reg:statusStable .
+

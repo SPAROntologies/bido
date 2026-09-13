@@ -1,0 +1,26 @@
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:N525a35fad04946d1bab4687413e30f46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:Nd5d20f7f9d26432db0a83023d3f9f6bd <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N525a35fad04946d1bab4687413e30f46 .
+_:N525a35fad04946d1bab4687413e30f46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N582eb00b26f940deab9c61dc7a6a5186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N5ac6b113608c463c9aec7eabd8de50bc <http://www.w3.org/2002/07/owl#onProperty> _:N33a85ed289854a43ad0ca7fe4db833ed .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure indicating how many demo papers has been accepted for publication or presentation in the venue." .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N7c134c9aebc1450aa9b4abe8a557b7ec .
+_:Ne284c85d578148d7aea687b09ba2fc48 <http://www.w3.org/2002/07/owl#unionOf> _:Nd5d20f7f9d26432db0a83023d3f9f6bd .
+_:N582eb00b26f940deab9c61dc7a6a5186 <http://www.w3.org/2002/07/owl#onProperty> _:N2088aff16f8243cb96318111e8ec2ce2 .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:N7c134c9aebc1450aa9b4abe8a557b7ec <http://www.w3.org/2002/07/owl#allValuesFrom> _:N582eb00b26f940deab9c61dc7a6a5186 .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:Nd5d20f7f9d26432db0a83023d3f9f6bd <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:N2088aff16f8243cb96318111e8ec2ce2 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N33a85ed289854a43ad0ca7fe4db833ed <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:demoà-paper-accepted ;\n        bido:hasNumericValue \"6\"^^xsd:float .\n    " .
+_:N5ac6b113608c463c9aec7eabd8de50bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N7c134c9aebc1450aa9b4abe8a557b7ec <http://www.w3.org/2002/07/owl#onProperty> _:N9c99546133e64ba79b32ce2f267fc091 .
+_:N582eb00b26f940deab9c61dc7a6a5186 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N5ac6b113608c463c9aec7eabd8de50bc .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+_:N7c134c9aebc1450aa9b4abe8a557b7ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Ne284c85d578148d7aea687b09ba2fc48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N9c99546133e64ba79b32ce2f267fc091 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N5ac6b113608c463c9aec7eabd8de50bc <http://www.w3.org/2002/07/owl#allValuesFrom> _:Ne284c85d578148d7aea687b09ba2fc48 .
+<http://purl.org/spar/bido/demo-paper-accepted> <http://www.w3.org/2000/01/rdf-schema#label> "number of demo paper accepted" .

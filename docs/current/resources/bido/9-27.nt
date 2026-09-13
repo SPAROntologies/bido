@@ -1,0 +1,7 @@
+<http://purl.org/spar/bido/9-27> <http://www.w3.org/2000/01/rdf-schema#comment> "The citation interval between 9 (included) and 27 (excluded)."@en .
+<http://purl.org/spar/bido/9-27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/9-27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/OrderOfMagnitude> .
+<http://purl.org/spar/bido/9-27> <http://purl.org/vocab/vann/example> "\n    :my-research-category a bido:ResearchCareerCategory ;\n        bido:hasOrderOfMagnitude bido:9-27 .\n    " .
+<http://purl.org/spar/bido/9-27> <http://www.w3.org/2000/01/rdf-schema#label> "[9,27)" .
+<http://purl.org/spar/bido/9-27> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/9-27> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-research-career-category/> .

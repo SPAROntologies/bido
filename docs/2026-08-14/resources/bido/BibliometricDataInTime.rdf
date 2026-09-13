@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/BibliometricDataInTime">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
+    <rdfs:subClassOf rdf:nodeID="N18bed83341034ea0ae6704efd49eee10"/>
+    <rdfs:subClassOf rdf:nodeID="Ndd2624e925bb461baa3be2d5f95fa7b6"/>
+    <rdfs:subClassOf rdf:nodeID="Na866f59e66f0409e8b9f6695afb88049"/>
+    <rdfs:subClassOf rdf:nodeID="N8eadc0068b0145b3a1cf88b12340b3c0"/>
+    <rdfs:subClassOf rdf:nodeID="Nac2ea6f93c88455cb2752234e837d898"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdfs:subClassOf rdf:nodeID="N00dec43ff1cc4fd48814eb3092cd2dd8"/>
+    <rdfs:comment>A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval.</rdfs:comment>
+    <rdfs:label>bibliometric data in time</rdfs:label>
+    <rdfs:label xml:lang="en">bibliometric data in time</rdfs:label>
+    <vann:example>
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-bibliometric-data .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na866f59e66f0409e8b9f6695afb88049">
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/withValue"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd2624e925bb461baa3be2d5f95fa7b6">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/atTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8eadc0068b0145b3a1cf88b12340b3c0">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/atTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nac2ea6f93c88455cb2752234e837d898">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#Interval"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/atTime"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N00dec43ff1cc4fd48814eb3092cd2dd8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/withValue"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N18bed83341034ea0ae6704efd49eee10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2012/04/tvc/withValue"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+  </rdf:Description>
+</rdf:RDF>

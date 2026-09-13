@@ -1,0 +1,12 @@
+@prefix ns1: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+ns1:atTime a owl:ObjectProperty ;
+    rdfs:label "at time"@en ;
+    rdfs:comment "The relation between a situation and the particular temporal instant or time period in which the situation takes place."@en ;
+    rdfs:domain ns1:ValueInTime ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:range time:TemporalEntity .
+

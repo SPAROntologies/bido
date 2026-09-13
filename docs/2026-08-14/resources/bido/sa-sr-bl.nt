@@ -1,0 +1,7 @@
+<http://purl.org/spar/bido/sa-sr-bl> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/sa-sr-bl> <http://www.w3.org/2000/01/rdf-schema#comment> "Discrete scale from Strong Reject to Strong Accept, including Bordeline"@en .
+<http://purl.org/spar/bido/sa-sr-bl> <http://www.w3.org/2000/01/rdf-schema#label> "Strong Reject to Strong Accept review rating scale"@en .
+<http://purl.org/spar/bido/sa-sr-bl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/sa-sr-bl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/DiscreteReviewRatingScale> .
+<http://purl.org/spar/bido/sa-sr-bl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/sa-sr-bl> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:sa-sr-bl-wrej .\n    \n    bido:sa-sr-bl-wre\n        bido:isDefinedIn bido:sa-sr-bl .\n    " .

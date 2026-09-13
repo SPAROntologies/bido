@@ -1,0 +1,22 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:core-a-star a bido:ConferenceRankingCategory,
+        owl:NamedIndividual ;
+    rdfs:label "A*" ;
+    bido:isDefinedIn bido:core-conference-ranking ;
+    bido:isHigherThan bido:core-a ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:core-a-star .
+    """ ;
+    rdfs:comment "The CORE category for a flagship conference, a leading venue in a discipline area." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    vs:term_status reg:statusStable .
+

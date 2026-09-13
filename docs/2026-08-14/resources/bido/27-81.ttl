@@ -1,0 +1,18 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:27-81 a bido:OrderOfMagnitude,
+        owl:NamedIndividual ;
+    rdfs:label "[27,81)" ;
+    vann:example """
+    :my-research-category a bido:ResearchCareerCategory ;
+        bido:hasOrderOfMagnitude bido:27-81 .
+    """ ;
+    rdfs:comment "The citation interval between 27 (included) and 81 (excluded)."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    vs:term_status reg:statusStable .
+

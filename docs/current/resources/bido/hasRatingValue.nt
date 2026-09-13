@@ -1,0 +1,8 @@
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the rating given to a review."@en .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/ReviewRatingValue> .
+<http://purl.org/spar/bido/hasRatingValue> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:dis-n2-p2-neg1 .\n\n    bido:dis-n2-p2-neg1 a bido:ReviewRatingValue ;\n        bido:hasRatingValue \"-1\"^^xsd:int .\n    " .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/spar/bido/hasRatingValue> <http://www.w3.org/2000/01/rdf-schema#label> "has rating value"@en .

@@ -1,0 +1,9 @@
+<http://purl.org/spar/bido/isDefinedIn> <http://purl.org/vocab/vann/example> "\n    bido:core-a a bido:ConferenceRankingCategory ;\n        bido:isDefinedIn bido:core-conference-ranking .\n    " .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is defined in ranking"@en .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/CategorialBibliometricData> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a ranking category and the ranking that defines it."@en .
+<http://purl.org/spar/bido/isDefinedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .

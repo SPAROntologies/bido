@@ -1,0 +1,7 @@
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A scale defining the rating given by a reviewer for a specific scientific contribution."@en .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#label> "review rating scale"@en .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-review-rating-value .\n\n    :my-review-rating-value        \n        bido:isDefinedIn bido:to-5-continuous .\n\n    bido:to-5-continuous a bido:ReviewRatingScale .\n    " .
+<http://purl.org/spar/bido/ReviewRatingScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -1,0 +1,21 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:premature-acceleration a bido:AccelerationPoint,
+        owl:NamedIndividual ;
+    rdfs:label "premature acceleration"@en ;
+    vann:example """
+    :my-research-category a bido:ResearchCareerCategory ;
+        bido:hasCurve :my-curve .
+
+    :my-curve a bido:Curve ;
+        bido:hasAccelerationPoint bido:premature-acceleration .
+    """ ;
+    rdfs:comment "An acceleration point occurring early in the considered research period."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    vs:term_status reg:statusStable .
+

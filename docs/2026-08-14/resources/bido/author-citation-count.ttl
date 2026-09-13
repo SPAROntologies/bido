@@ -1,0 +1,27 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:author-citation-count a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom foaf:Person ;
+                            owl:onProperty [ owl:inverseOf bido:holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf bido:withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf bido:hasMeasure ] ],
+        bido:BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "author citation count" ;
+    vann:example """
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:author-citation-count ;
+        bido:hasNumericValue "56"^^xsd:integer .
+    """ ;
+    rdfs:comment "The count of all the citation received by all the papers of a certain author." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-standard-bibliometric-measures/> ;
+    vs:term_status reg:statusStable .
+

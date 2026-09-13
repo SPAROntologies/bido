@@ -1,0 +1,22 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:ReviewRatingValue a owl:Class ;
+    rdfs:label "review rating value"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:a-r-ts-rejps .
+
+    bido:a-r-ts-rejps a bido:ReviewRatingValue .
+    """ ;
+    rdfs:comment "The set of values compliant with a given review rating scale."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:subClassOf bido:CategorialBibliometricData ;
+    vs:term_status reg:statusStable .
+

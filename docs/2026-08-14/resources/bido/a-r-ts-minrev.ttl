@@ -1,0 +1,26 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:a-r-ts-minrev a bido:ReviewRatingValue,
+        owl:NamedIndividual ;
+    rdfs:label "Minor revision (Accept to Reject, Two Strikes review rating scale)"@en ;
+    bido:isDefinedIn bido:a-r-ts ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:a-r-ts-minrev .
+    """ ;
+    rdfs:comment "The value 'Minor revision' in a discrete scale from 'Accept' to 'Reject, Two Strikes' for review rating."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    vs:term_status reg:statusStable ;
+    skos:closeMatch bido:a-na-wr-appwr,
+        bido:dis-0-5-3,
+        bido:sa-sr-bl-wacc,
+        bido:sa-sr-nb-wacc .
+

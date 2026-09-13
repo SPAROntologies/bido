@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/e-index">
+    <vann:example>
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:e-index ;
+        bido:hasNumericValue "3"^^xsd:integer .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
+    <rdfs:label>e-index</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="Nd3bce1b9ade5477c9fa3df3705a26795"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdfs:comment>An h-index complement, aimed at considering the contributions of excess citations, which are mainly from highly cited papers. It is necessary, especially for evaluating highly cited scientists or for precisely comparing the scientific output of a group of scientists having an identical h-index.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd3bce1b9ade5477c9fa3df3705a26795">
+    <owl:allValuesFrom rdf:nodeID="N33902a618e1444f6a44046f28ca55e28"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N35bd4f0f067940dd9e00906a4082f8cb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5a351f6cbe2d4063b2df5079a130ab80">
+    <owl:onProperty rdf:nodeID="Nbfdf04ab36034e3a8ce3c8ca0aa47b87"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57b62774605d40a9b6ee49e495c09885">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33902a618e1444f6a44046f28ca55e28">
+    <owl:allValuesFrom rdf:nodeID="N5a351f6cbe2d4063b2df5079a130ab80"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N57b62774605d40a9b6ee49e495c09885"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfdf04ab36034e3a8ce3c8ca0aa47b87">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N35bd4f0f067940dd9e00906a4082f8cb">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+</rdf:RDF>

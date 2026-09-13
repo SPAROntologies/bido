@@ -1,0 +1,22 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:Trend a owl:Class ;
+    rdfs:label "trend"@en ;
+    vann:example """
+    :my-research-career-activity a bido:ResearchCareerCategory ;
+        bido:hasCurve :my-curve .
+
+    :my-curve a bido:Curve ;
+        bido:hasTrend bido:increasing .
+
+    bido:increasing a bido:Trend .
+    """ ;
+    rdfs:comment "The flat/decreasing/increasing trend characterising the curve."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    vs:term_status reg:statusStable .
+

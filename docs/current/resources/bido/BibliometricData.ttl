@@ -1,0 +1,22 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:BibliometricData a owl:Class ;
+    rdfs:label "bibliometric data",
+        "bibliometric data"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-bibliometric-data .
+
+    :my-bibliometric-data a bido:BibliometricData .
+    """ ;
+    rdfs:comment "Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data.",
+        "Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
+    vs:term_status reg:statusStable .
+

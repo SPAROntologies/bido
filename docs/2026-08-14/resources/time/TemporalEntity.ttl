@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+time:TemporalEntity a owl:Class ;
+    rdfs:label "temporal entity"@en ;
+    rdfs:comment "A temporal interval or instant."@en ;
+    rdfs:isDefinedBy time: .
+

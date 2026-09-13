@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:closeMatch a owl:ObjectProperty ;
+    rdfs:label "has close match"@en ;
+    rdfs:comment "A relation between two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications."@en ;
+    rdfs:isDefinedBy skos: .
+

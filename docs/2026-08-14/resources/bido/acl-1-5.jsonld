@@ -1,0 +1,36 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/acl-1-5",
+    "@type": [
+      "http://purl.org/spar/bido/DiscreteReviewerConfidenceScale",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:acl-1-5-acl1 .\n    \n    bido:acl-1-5-acl1 a bido:ReviewerConfidenceValue,\n        bido:isDefinedIn bido:acl-1-5 .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Discrete scale from 1 to 5, used by Association for Computational Linguistics annual meetings."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Discrete 1 to 5 review rating scale"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="Naf44a57776eb4526b7c9dabdb6e62d0a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N403d781ac5da4da4bf8525318f1ab6af"/>
+    <owl:onProperty rdf:nodeID="N0e20a33ad18e427dbeabceda7be48587"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4711a36e4f3747498ec0d0065a106e0d">
+    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:onProperty rdf:nodeID="N3f46b8f673d043a2a93fc77ba3c98199"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/h-index">
+    <rdfs:label>h-index</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
+    <rdf:type rdf:nodeID="Naf44a57776eb4526b7c9dabdb6e62d0a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment>An index that attempts to measure both the productivity and impact of the published work of a scientist or scholar. The index is based on the set of the scientist's most cited papers and the number of citations that they have received in other publications. The index can also be applied to the productivity and impact of a group of scientists, such as a department or university or country, as well as a scholarly journal.</rdfs:comment>
+    <vann:example>
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:h-index ;
+        bido:hasNumericValue "8"^^xsd:integer .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e20a33ad18e427dbeabceda7be48587">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f46b8f673d043a2a93fc77ba3c98199">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N403d781ac5da4da4bf8525318f1ab6af">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Nd7de48bc94024135a6a2108a34157cca"/>
+    <owl:allValuesFrom rdf:nodeID="N4711a36e4f3747498ec0d0065a106e0d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd7de48bc94024135a6a2108a34157cca">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+</rdf:RDF>

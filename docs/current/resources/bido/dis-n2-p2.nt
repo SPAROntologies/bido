@@ -1,0 +1,7 @@
+<http://purl.org/spar/bido/dis-n2-p2> <http://www.w3.org/2000/01/rdf-schema#label> "Discrete -2 to 2 review rating scale"@en .
+<http://purl.org/spar/bido/dis-n2-p2> <http://www.w3.org/2000/01/rdf-schema#comment> "Discrete scale from -2 to 2, including 0."@en .
+<http://purl.org/spar/bido/dis-n2-p2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/DiscreteReviewRatingScale> .
+<http://purl.org/spar/bido/dis-n2-p2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/dis-n2-p2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/dis-n2-p2> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/dis-n2-p2> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:dis-n2-p2-0 .\n\n    bido:dis-n2-p2-0\n        bido:isDefinedIn bido:dis-n2-p2 .\n    " .

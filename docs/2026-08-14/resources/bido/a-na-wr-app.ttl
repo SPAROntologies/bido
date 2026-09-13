@@ -1,0 +1,32 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:a-na-wr-app a bido:ReviewRatingValue,
+        owl:NamedIndividual ;
+    rdfs:label "Approved (Approved to Not Approved review rating scale)"@en ;
+    bido:isDefinedIn bido:a-na-wr ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:a-na-wr-app .
+    """ ;
+    rdfs:comment "The value 'Approved' in a discrete scale from 'Approved' to 'Not Approved' for review rating."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    vs:term_status reg:statusStable ;
+    skos:closeMatch bido:a-r-ts-acc,
+        bido:dis-0-10-10,
+        bido:dis-0-5-4,
+        bido:dis-0-5-5,
+        bido:dis-n2-p2-pos1,
+        bido:dis-n2-p2-pos2,
+        bido:sa-sr-bl-acc,
+        bido:sa-sr-bl-sacc,
+        bido:sa-sr-nb-acc,
+        bido:sa-sr-nb-sacc .
+

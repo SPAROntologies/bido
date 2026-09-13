@@ -1,0 +1,67 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/dis-n2-p2-neg2",
+    "@type": [
+      "http://purl.org/spar/bido/ReviewRatingValue",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/spar/bido/hasRatingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#int",
+        "@value": "-2"
+      }
+    ],
+    "http://purl.org/spar/bido/isDefinedIn": [
+      {
+        "@id": "http://purl.org/spar/bido/dis-n2-p2"
+      }
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:dis-n2-p2-neg2 .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The value -2 in a discrete scale from -2 to 2 for review rating."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "-2 on a [-2,2] scale (Discrete -2 to 2 review rating scale)"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "http://purl.org/spar/bido/sa-sr-nb-srej"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/sa-sr-bl-srej"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/dis-0-10-0"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/dis-0-5-0"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/a-na-wr-napp"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/a-r-ts-rej"
+      }
+    ]
+  }
+]

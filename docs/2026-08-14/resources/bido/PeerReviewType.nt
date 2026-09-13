@@ -1,0 +1,22 @@
+_:N5f11a94105d947788d25d314127846e3 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of of peer review process, such as 'double-blind' or 'open'."@en .
+_:N45d512e8194d488494d0bc9d6fba46fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nea41890716ec474eb512f177e93ec27c .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N7466940061e748faa4dea3c7d393a2b8 .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:N45d512e8194d488494d0bc9d6fba46fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:Nea41890716ec474eb512f177e93ec27c <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:Nea41890716ec474eb512f177e93ec27c <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/bido/PeerReviewType> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:double-blind-peer-review .\n\n    :double-blind-peer-review a bido:PeerReviewType .\n    " .
+_:Nd1db3492a96640e19f9e6f7b4b510360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+_:N4bca3d83c1044d009a08fda314dcff12 <http://www.w3.org/2002/07/owl#unionOf> _:N45d512e8194d488494d0bc9d6fba46fe .
+_:N4bca3d83c1044d009a08fda314dcff12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#label> "peer review type"@en .
+_:N8addcb8229f946508dd4d0d87a1afd55 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nd1db3492a96640e19f9e6f7b4b510360 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N4bca3d83c1044d009a08fda314dcff12 .
+_:N7466940061e748faa4dea3c7d393a2b8 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nd1db3492a96640e19f9e6f7b4b510360 .
+_:N7466940061e748faa4dea3c7d393a2b8 <http://www.w3.org/2002/07/owl#onProperty> _:N5f11a94105d947788d25d314127846e3 .
+_:Nd1db3492a96640e19f9e6f7b4b510360 <http://www.w3.org/2002/07/owl#onProperty> _:N8addcb8229f946508dd4d0d87a1afd55 .
+<http://purl.org/spar/bido/PeerReviewType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+_:N7466940061e748faa4dea3c7d393a2b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .

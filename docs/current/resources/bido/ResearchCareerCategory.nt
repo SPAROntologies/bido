@@ -1,0 +1,16 @@
+_:N1787d97127a54f52a1532f019754e67f <http://www.w3.org/2002/07/owl#onProperty> _:N3d211fe05ea5477bbffca377733e8d48 .
+_:N1787d97127a54f52a1532f019754e67f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/ResearchCareerCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ResearchCareerCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Bibliometric data that includes categories describing the research career of people. Each of such categories is characterised by four specific dimensions: the research period considered, the curve of the choosed citation distribution, the slope of such curve, and the order of magnitude of the citation of such research period."@en .
+<http://purl.org/spar/bido/ResearchCareerCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+_:N316783e5283a4e75a6a418657719ff2c <http://www.w3.org/2002/07/owl#onProperty> _:N6830c70b62c4453f821a2ad1bcb541ba .
+<http://purl.org/spar/bido/ResearchCareerCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-research-career-category/> .
+<http://purl.org/spar/bido/ResearchCareerCategory> <http://purl.org/vocab/vann/example> "\n    :my-research-career-activity a bido:ResearchCareerCategory ;\n        bido:hasCurve :my-curve ;\n        bido:hasSlope :my-slope ;\n        bido:hasOrderOfMagnitude bido:243-729 ;\n        bido:concernsResearchPeriod bido:5-years-beginning .\n\n    :my-curve a bido:Curve ;\n        bido:hasTrend bido:increasing ;\n        bido:hasAccelerationPoint bido:premature-deceleration .\n\n    :my-slope a bido:Slope ;\n        bido:hasStrength bido:low ;\n        bido:hasGrowth bido:logarithmic .\n    " .
+<http://purl.org/spar/bido/ResearchCareerCategory> <http://www.w3.org/2000/01/rdf-schema#label> "research career category"@en .
+_:N316783e5283a4e75a6a418657719ff2c <http://www.w3.org/2002/07/owl#allValuesFrom> _:N1787d97127a54f52a1532f019754e67f .
+_:N6830c70b62c4453f821a2ad1bcb541ba <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N1787d97127a54f52a1532f019754e67f <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Person> .
+_:N3d211fe05ea5477bbffca377733e8d48 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/ResearchCareerCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:N316783e5283a4e75a6a418657719ff2c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/ResearchCareerCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N316783e5283a4e75a6a418657719ff2c .

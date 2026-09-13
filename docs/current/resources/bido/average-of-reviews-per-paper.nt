@@ -1,0 +1,26 @@
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N535415f7cee147e09342e466af4c3b15 .
+_:N30bd04b444524e33b7bc5f5f38c64152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N324039b0574340d59c74ae406af5c96d .
+_:N646b81e0711e43e2803cd13e8094362c <http://www.w3.org/2002/07/owl#onProperty> _:N72f8b92b31834c948066217f83e32d66 .
+_:Nda029d0f7e544819a5ba33e455d2777e <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:N535415f7cee147e09342e466af4c3b15 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N646b81e0711e43e2803cd13e8094362c .
+_:N72f8b92b31834c948066217f83e32d66 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+_:Ne3ad34151bde4244b417d0833dc2c696 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:average-of-reviews-per-paper ;\n        bido:hasNumericValue \"3.5\"^^xsd:float .\n    " .
+_:Ne3ad34151bde4244b417d0833dc2c696 <http://www.w3.org/2002/07/owl#onProperty> _:Nda029d0f7e544819a5ba33e455d2777e .
+_:N535415f7cee147e09342e466af4c3b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure indicating how many reviewers has been used for each paper submitted to a venue." .
+_:N646b81e0711e43e2803cd13e8094362c <http://www.w3.org/2002/07/owl#allValuesFrom> _:Ne3ad34151bde4244b417d0833dc2c696 .
+_:Ne678566cd3da4573b3b021e5110eb082 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N324039b0574340d59c74ae406af5c96d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:N324039b0574340d59c74ae406af5c96d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N30bd04b444524e33b7bc5f5f38c64152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:Nbf629d945ee949beb3fc90524bd91348 <http://www.w3.org/2002/07/owl#unionOf> _:N30bd04b444524e33b7bc5f5f38c64152 .
+_:N535415f7cee147e09342e466af4c3b15 <http://www.w3.org/2002/07/owl#onProperty> _:Ne678566cd3da4573b3b021e5110eb082 .
+_:Nbf629d945ee949beb3fc90524bd91348 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne3ad34151bde4244b417d0833dc2c696 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nbf629d945ee949beb3fc90524bd91348 .
+<http://purl.org/spar/bido/average-of-reviews-per-paper> <http://www.w3.org/2000/01/rdf-schema#label> "average number of reviews per paper" .
+_:N646b81e0711e43e2803cd13e8094362c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .

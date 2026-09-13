@@ -1,0 +1,12 @@
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#label> "with bibliometric data"@en .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity." .
+<http://purl.org/spar/bido/withBibliometricData> <http://purl.org/vocab/vann/example> "\n    :my-journal a fabio:Journal ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n    " .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2012/04/tvc/withValue> .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity."@en .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/BibliometricData> .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-core/> .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#label> "with bibliometric data" .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity." .
+<http://purl.org/spar/bido/withBibliometricData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/BibliometricDataInTime> .

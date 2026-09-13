@@ -1,0 +1,26 @@
+_:N0ee34a12924549dd9fd57f99b52f3959 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N9586af09e0c74ef3940a487f5c2e6b7d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Ncffb8990f2ac481ba22244dc0865eb63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N7cc4871ad56d453f94e248efc1b759d1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N0ee34a12924549dd9fd57f99b52f3959 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N9586af09e0c74ef3940a487f5c2e6b7d .
+_:Ncffb8990f2ac481ba22244dc0865eb63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N0ee34a12924549dd9fd57f99b52f3959 .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N9586af09e0c74ef3940a487f5c2e6b7d <http://www.w3.org/2002/07/owl#onProperty> _:Nec2ed87594cc4b6a8302761662ff7fb7 .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#label> "number of poster paper accepted"@en .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:Nb7fc37eb6f2447299978e0395f376575 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nec2ed87594cc4b6a8302761662ff7fb7 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N7cc4871ad56d453f94e248efc1b759d1 <http://www.w3.org/2002/07/owl#allValuesFrom> _:Nb7fc37eb6f2447299978e0395f376575 .
+_:Ne7d1c22f9e0c45bca7c212df9eb94dbb <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+_:N7cc4871ad56d453f94e248efc1b759d1 <http://www.w3.org/2002/07/owl#onProperty> _:Ne7d1c22f9e0c45bca7c212df9eb94dbb .
+_:Nb7fc37eb6f2447299978e0395f376575 <http://www.w3.org/2002/07/owl#unionOf> _:Nfa1ca26c6cf843cbaa3d1a1bda2f6163 .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:N0ee34a12924549dd9fd57f99b52f3959 <http://www.w3.org/2002/07/owl#onProperty> _:N2facde55dc2946cb89776622eda86c7e .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:poster-papers-accepted ;\n        bido:hasNumericValue \"25\"^^xsd:float .\n    " .
+<http://purl.org/spar/bido/poster-papers-accepted> <http://www.w3.org/2000/01/rdf-schema#comment> "A measure indicating how many poster papers has been accepted for publication/presentation in the venue."@en .
+_:N9586af09e0c74ef3940a487f5c2e6b7d <http://www.w3.org/2002/07/owl#allValuesFrom> _:N7cc4871ad56d453f94e248efc1b759d1 .
+_:Nfa1ca26c6cf843cbaa3d1a1bda2f6163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:Nfa1ca26c6cf843cbaa3d1a1bda2f6163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ncffb8990f2ac481ba22244dc0865eb63 .
+_:N2facde55dc2946cb89776622eda86c7e <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .

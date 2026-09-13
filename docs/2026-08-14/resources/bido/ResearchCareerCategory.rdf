@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="N1787d97127a54f52a1532f019754e67f">
+    <owl:onProperty rdf:nodeID="N3d211fe05ea5477bbffca377733e8d48"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ResearchCareerCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Bibliometric data that includes categories describing the research career of people. Each of such categories is characterised by four specific dimensions: the research period considered, the curve of the choosed citation distribution, the slope of such curve, and the order of magnitude of the citation of such research period.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+    <rdfs:subClassOf rdf:nodeID="N316783e5283a4e75a6a418657719ff2c"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-research-career-category/"/>
+    <vann:example>
+    :my-research-career-activity a bido:ResearchCareerCategory ;
+        bido:hasCurve :my-curve ;
+        bido:hasSlope :my-slope ;
+        bido:hasOrderOfMagnitude bido:243-729 ;
+        bido:concernsResearchPeriod bido:5-years-beginning .
+
+    :my-curve a bido:Curve ;
+        bido:hasTrend bido:increasing ;
+        bido:hasAccelerationPoint bido:premature-deceleration .
+
+    :my-slope a bido:Slope ;
+        bido:hasStrength bido:low ;
+        bido:hasGrowth bido:logarithmic .
+    </vann:example>
+    <rdfs:label xml:lang="en">research career category</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N316783e5283a4e75a6a418657719ff2c">
+    <owl:onProperty rdf:nodeID="N6830c70b62c4453f821a2ad1bcb541ba"/>
+    <owl:allValuesFrom rdf:nodeID="N1787d97127a54f52a1532f019754e67f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6830c70b62c4453f821a2ad1bcb541ba">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3d211fe05ea5477bbffca377733e8d48">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+</rdf:RDF>

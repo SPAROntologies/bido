@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bido="http://purl.org/spar/bido/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/dis-n2-p2-pos1">
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-bl-acc"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-na-wr-app"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/sa-sr-nb-acc"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/dis-0-5-4"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/bido/a-r-ts-acc"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/ReviewRatingValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <vann:example>
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:dis-n2-p2-pos1 .
+    </vann:example>
+    <bido:hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bido:hasRatingValue>
+    <rdfs:comment xml:lang="en">The value 1 in a discrete scale from -2 to 2 for review rating.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">1 on a [-2,2] scale (Discrete -2 to 2 review rating scale)</rdfs:label>
+    <bido:isDefinedIn rdf:resource="http://purl.org/spar/bido/dis-n2-p2"/>
+  </rdf:Description>
+</rdf:RDF>

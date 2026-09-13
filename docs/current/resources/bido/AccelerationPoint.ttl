@@ -1,0 +1,30 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:AccelerationPoint a owl:Class ;
+    rdfs:label "acceleration point"@en ;
+    vann:example """
+    :my-research-career-activity a bido:ResearchCareerCategory ;
+        bido:hasCurve :my-curve .
+
+    :my-curve a bido:Curve ;
+        bido:hasAccelerationPoint bido:premature-deceleration .
+
+    bido:premature-deceleration a bido:AccelerationPoint .
+    """ ;
+    rdfs:comment "The acceleration or deceleration point (none or premature, median, overdue acceleration/deceleration) of the curve, if any."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( bido:Curve [ a owl:Restriction ;
+                                owl:allValuesFrom [ a owl:Class ;
+                                        owl:oneOf ( bido:increasing bido:decreasing ) ] ;
+                                owl:onProperty bido:hasTrend ] ) ] ;
+            owl:onProperty [ owl:inverseOf bido:hasAccelerationPoint ] ] ;
+    vs:term_status reg:statusStable .
+

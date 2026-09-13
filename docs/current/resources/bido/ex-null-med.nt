@@ -1,0 +1,11 @@
+<http://purl.org/spar/bido/ex-null-med> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/ex-null-med> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.org/spar/bido/ex-null-med> .
+<http://purl.org/spar/bido/ex-null-med> <http://purl.org/spar/bido/hasConfidenceValue> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://purl.org/spar/bido/ex-null-med> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:ex-null-med .\n    " .
+<http://purl.org/spar/bido/ex-null-med> <http://www.w3.org/2000/01/rdf-schema#comment> "The value 'Medium' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence."@en .
+<http://purl.org/spar/bido/ex-null-med> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.org/spar/bido/acl-1-5-acl3> .
+<http://purl.org/spar/bido/ex-null-med> <http://www.w3.org/2000/01/rdf-schema#label> "Medium (Expert to Null reviewer confidence scale)"@en .
+<http://purl.org/spar/bido/ex-null-med> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/ex-null-med> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/ex-null-med> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ReviewerConfidenceValue> .
+<http://purl.org/spar/bido/ex-null-med> <http://purl.org/spar/bido/isDefinedIn> <http://purl.org/spar/bido/ex-null> .

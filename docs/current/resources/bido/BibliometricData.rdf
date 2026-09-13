@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/BibliometricData">
+    <rdfs:label>bibliometric data</rdfs:label>
+    <rdfs:label xml:lang="en">bibliometric data</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment>Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-core/"/>
+    <vann:example>
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-bibliometric-data .
+
+    :my-bibliometric-data a bido:BibliometricData .
+    </vann:example>
+  </rdf:Description>
+</rdf:RDF>

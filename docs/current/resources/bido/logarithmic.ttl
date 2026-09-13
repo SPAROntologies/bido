@@ -1,0 +1,21 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:logarithmic a bido:Growth,
+        owl:NamedIndividual ;
+    rdfs:label "logarithmic"@en ;
+    vann:example """
+    :my-research-category a bido:ResearchCareerCategory ;
+        bido:hasSlope :my-slope .
+
+    :my-slope a bido:Slope ;
+        bido:hasGrowth bido:logarithmic .
+    """ ;
+    rdfs:comment "A logarithmic growth pattern characterizing the slope of the curve."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    vs:term_status reg:statusStable .
+

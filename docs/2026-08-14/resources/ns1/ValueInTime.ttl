@@ -1,0 +1,9 @@
+@prefix ns1: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:ValueInTime a owl:Class ;
+    rdfs:label "value in time"@en ;
+    rdfs:comment "A particular kind of time-indexed situation that represents a hub linking the entity having a particular value, the value itself and the temporal and contextual extents from which the entity-value relationship depends."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc/> .
+

@@ -6,6 +6,8 @@ The Bibliometric Data Ontology (BiDO) is a modular ontology that allows the desc
 
 **Creators**: [Enrico Motta](https://orcid.org/0000-0003-0015-1952), [Francesco Osborne](https://orcid.org/0000-0001-6557-3131), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
 
+**Contributors**: [Sebastian Barzaghi](https://orcid.org/0000-0002-0799-1527)
+
 **License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
 
 **Website:** http://www.sparontologies.net/ontologies/bido

@@ -1,0 +1,21 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:isDefinedIn a owl:ObjectProperty ;
+    rdfs:label "is defined in ranking"@en ;
+    vann:example """
+    bido:core-a a bido:ConferenceRankingCategory ;
+        bido:isDefinedIn bido:core-conference-ranking .
+    """ ;
+    rdfs:comment "A relation between a ranking category and the ranking that defines it."@en ;
+    rdfs:domain bido:CategorialBibliometricData ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:subPropertyOf skos:inScheme ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,7 @@
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/2000/01/rdf-schema#label> "conference ranking"@en .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/2000/01/rdf-schema#comment> "A ranking involving conferences that is composed by categories identifying different rankings."@en .
+<http://purl.org/spar/bido/ConferenceRanking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/ConferenceRanking> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:core-a .\n\n    bido:core-a\n        bido:isDefinedIn bido:core-conference-ranking .\n    \n    bido:core-conference-ranking a bido:ConferenceRanking .\n    " .

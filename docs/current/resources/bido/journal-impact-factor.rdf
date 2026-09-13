@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="Na783c8219eea4589a3da781a2835ea89">
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/Journal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Ne3ebfd879cdf48b0b92ab5036a66e924"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b30d29834c14c75be2cc23d19fa131c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N12483d12a7814146b8a56000e7b8f9b5"/>
+    <owl:allValuesFrom rdf:nodeID="Na783c8219eea4589a3da781a2835ea89"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/journal-impact-factor">
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="N121140707bc84d3ab85721b3645e0d60"/>
+    <rdfs:comment>A measure reflecting the average number of citations to recent articles published in the journal. It is frequently used as a proxy for the relative importance of a journal within its field, with journals with higher impact factors deemed to be more important than those with lower ones.</rdfs:comment>
+    <vann:example>
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:journal-impact-factor ;
+        bido:hasNumericValue "2.464"^^xsd:float .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
+    <rdfs:label>journal impact factor</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N121140707bc84d3ab85721b3645e0d60">
+    <owl:allValuesFrom rdf:nodeID="N9b30d29834c14c75be2cc23d19fa131c"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N1a22b6c4be424ff9a4a442ef820168fc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N12483d12a7814146b8a56000e7b8f9b5">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a22b6c4be424ff9a4a442ef820168fc">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3ebfd879cdf48b0b92ab5036a66e924">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+</rdf:RDF>

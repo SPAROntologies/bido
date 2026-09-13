@@ -1,0 +1,33 @@
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-core/> .
+_:Na866f59e66f0409e8b9f6695afb88049 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2012/04/tvc/withValue> .
+_:Ndd2624e925bb461baa3be2d5f95fa7b6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#Interval> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N18bed83341034ea0ae6704efd49eee10 .
+_:Na866f59e66f0409e8b9f6695afb88049 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval." .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#label> "bibliometric data in time" .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Ndd2624e925bb461baa3be2d5f95fa7b6 .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Na866f59e66f0409e8b9f6695afb88049 .
+_:N8eadc0068b0145b3a1cf88b12340b3c0 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#Interval> .
+_:Nac2ea6f93c88455cb2752234e837d898 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#Interval> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular situation that describes a bibliometric data a person, an article, or any other publication-related entity may have, that can be restricted to a particular time interval."@en .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-bibliometric-data .\n    " .
+_:Ndd2624e925bb461baa3be2d5f95fa7b6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2012/04/tvc/atTime> .
+_:N00dec43ff1cc4fd48814eb3092cd2dd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N8eadc0068b0145b3a1cf88b12340b3c0 .
+_:N00dec43ff1cc4fd48814eb3092cd2dd8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2012/04/tvc/withValue> .
+_:N8eadc0068b0145b3a1cf88b12340b3c0 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2012/04/tvc/atTime> .
+_:N00dec43ff1cc4fd48814eb3092cd2dd8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/bido/BibliometricMeasure> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Nac2ea6f93c88455cb2752234e837d898 .
+_:Nac2ea6f93c88455cb2752234e837d898 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2012/04/tvc/atTime> .
+_:Ndd2624e925bb461baa3be2d5f95fa7b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N18bed83341034ea0ae6704efd49eee10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2012/04/tvc/ValueInTime> .
+_:N18bed83341034ea0ae6704efd49eee10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2012/04/tvc/withValue> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N18bed83341034ea0ae6704efd49eee10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:Na866f59e66f0409e8b9f6695afb88049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#label> "bibliometric data in time"@en .
+_:N8eadc0068b0145b3a1cf88b12340b3c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:Nac2ea6f93c88455cb2752234e837d898 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/BibliometricDataInTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N00dec43ff1cc4fd48814eb3092cd2dd8 .

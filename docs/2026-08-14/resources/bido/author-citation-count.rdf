@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="N3be916292d714fd69cb3eb910cb112ab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N3c80f8064cec4cd7ac09be4b709e62b5"/>
+    <owl:onProperty rdf:nodeID="Nb29480a0be8a4c6e91db9faebb646e21"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/author-citation-count">
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="N3be916292d714fd69cb3eb910cb112ab"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label>author citation count</rdfs:label>
+    <rdfs:comment>The count of all the citation received by all the papers of a certain author.</rdfs:comment>
+    <vann:example>
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:author-citation-count ;
+        bido:hasNumericValue "56"^^xsd:integer .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c80f8064cec4cd7ac09be4b709e62b5">
+    <owl:allValuesFrom rdf:nodeID="N3a550c968a0e4b02b95d5ba151a1df12"/>
+    <owl:onProperty rdf:nodeID="Naffc864f1e8040d7903d6aca4c06358a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naffc864f1e8040d7903d6aca4c06358a">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b0b548bd35b400d80aeeff95684e259">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb29480a0be8a4c6e91db9faebb646e21">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3a550c968a0e4b02b95d5ba151a1df12">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:onProperty rdf:nodeID="N9b0b548bd35b400d80aeeff95684e259"/>
+  </rdf:Description>
+</rdf:RDF>

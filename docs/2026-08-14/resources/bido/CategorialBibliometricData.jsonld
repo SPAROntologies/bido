@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/CategorialBibliometricData",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-research-category a bido:ResearchCareerCategory ;\n        bido:hasCurve :my-curve ;\n        bido:hasSlope :my-slope ;\n        bido:hasOrderOfMagnitude bido:243-729 ;\n        bido:concernsResearchPeriod bido:5-years-beginning .\n\n    bido:ResearchCareerCategory rdfs:subClassOf bido:CategorialBibliometricData .\n    "
+      },
+      {
+        "@value": "\n    :my-person a foaf:Person ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-categorial-bibliometric-data .\n\n    :my-categorial-bibliometric-data a bido:CategorialBibliometricData .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Categorical information that characterises publication-related entities from a bibliometric point of view."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-core/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "categorial bibliometric data"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/bido/BibliometricData"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

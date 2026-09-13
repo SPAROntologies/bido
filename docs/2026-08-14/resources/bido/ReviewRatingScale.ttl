@@ -1,0 +1,26 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:ReviewRatingScale a owl:Class ;
+    rdfs:label "review rating scale"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-review-rating-value .
+
+    :my-review-rating-value        
+        bido:isDefinedIn bido:to-5-continuous .
+
+    bido:to-5-continuous a bido:ReviewRatingScale .
+    """ ;
+    rdfs:comment "A scale defining the rating given by a reviewer for a specific scientific contribution."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:subClassOf skos:ConceptScheme ;
+    vs:term_status reg:statusStable .
+

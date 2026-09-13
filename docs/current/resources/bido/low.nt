@@ -1,0 +1,7 @@
+<http://purl.org/spar/bido/low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/Strength> .
+<http://purl.org/spar/bido/low> <http://purl.org/vocab/vann/example> "\n    :my-research-category a bido:ResearchCareerCategory ;\n        bido:hasSlope :my-slope .\n\n    :my-slope a bido:Slope ;\n        bido:hasStrength bido:low .\n    " .
+<http://purl.org/spar/bido/low> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-research-career-category/> .
+<http://purl.org/spar/bido/low> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/low> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/low> <http://www.w3.org/2000/01/rdf-schema#label> "low"@en .
+<http://purl.org/spar/bido/low> <http://www.w3.org/2000/01/rdf-schema#comment> "A low strength characterizing the slope of the curve."@en .

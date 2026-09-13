@@ -1,0 +1,55 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/sa-sr-nb-wacc",
+    "@type": [
+      "http://purl.org/spar/bido/ReviewRatingValue",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://purl.org/spar/bido/isDefinedIn": [
+      {
+        "@id": "http://purl.org/spar/bido/sa-sr-nb"
+      }
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:sa-sr-nb-wacc .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The value 'Weak Accept' in a discrete scale from 'Strong Reject' to 'Strong Accept' for review rating."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Weak Accept (Strong Reject to Strong Accept, without Borderline review rating scale)"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "http://purl.org/spar/bido/a-r-ts-minrev"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/a-na-wr-appwr"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/dis-0-5-3"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/sa-sr-bl-wacc"
+      }
+    ]
+  }
+]

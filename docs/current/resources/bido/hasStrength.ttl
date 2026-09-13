@@ -1,0 +1,22 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:hasStrength a owl:ObjectProperty ;
+    rdfs:label "has strength"@en ;
+    vann:example """
+    :my-research-category a bido:ResearchCareerCategory ;
+        bido:hasSlope :my-slope .
+
+    :my-slope a bido:Slope ;
+        bido:hasStrength bido:low .
+    """ ;
+    rdfs:comment "The relation between the slope and the related strength."@en ;
+    rdfs:domain bido:Slope ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    rdfs:range bido:Strength ;
+    vs:term_status reg:statusStable .
+

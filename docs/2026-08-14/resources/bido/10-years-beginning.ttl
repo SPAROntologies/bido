@@ -1,0 +1,19 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:10-years-beginning a owl:NamedIndividual,
+        time:Interval ;
+    rdfs:label "10 years beginning"@en ;
+    vann:example """
+    :my-research-category a bido:ResearchCareerCategory ;
+        bido:concernsResearchPeriod bido:10-years-beginning .
+    """ ;
+    rdfs:comment "The interval covering the first 10 years of a research career."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-research-career-category/> ;
+    vs:term_status reg:statusStable .
+

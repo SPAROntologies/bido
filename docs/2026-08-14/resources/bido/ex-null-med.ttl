@@ -1,0 +1,26 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bido:ex-null-med a bido:ReviewerConfidenceValue,
+        owl:NamedIndividual ;
+    rdfs:label "Medium (Expert to Null reviewer confidence scale)"@en ;
+    bido:hasConfidenceValue "2"^^xsd:int ;
+    bido:isDefinedIn bido:ex-null ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:ex-null-med .
+    """ ;
+    rdfs:comment "The value 'Medium' in a discrete scale from 'Expert' to 'Null' for rating reviewers' confidence."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    vs:term_status reg:statusStable ;
+    skos:closeMatch bido:acl-1-5-acl3,
+        bido:ex-null-med .
+

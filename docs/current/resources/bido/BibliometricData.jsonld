@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/BibliometricData",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-bibliometric-data .\n\n    :my-bibliometric-data a bido:BibliometricData .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data."
+      },
+      {
+        "@language": "en",
+        "@value": "Any kind of bibliometric data. In particular, they are organised according two sub-concepts: numeric data and categorial data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-core/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "bibliometric data"
+      },
+      {
+        "@language": "en",
+        "@value": "bibliometric data"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

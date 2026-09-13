@@ -1,0 +1,9 @@
+@prefix ns2: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns2:Journal a owl:Class ;
+    rdfs:label "journal"@en ;
+    rdfs:comment "A scholarly periodical primarily devoted to the publication of original research papers."@en ;
+    rdfs:isDefinedBy ns2: .
+

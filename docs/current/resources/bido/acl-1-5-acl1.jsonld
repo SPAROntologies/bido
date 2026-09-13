@@ -1,0 +1,55 @@
+[
+  {
+    "@id": "http://purl.org/spar/bido/acl-1-5-acl1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/bido/ReviewerConfidenceValue"
+    ],
+    "http://purl.org/spar/bido/hasConfidenceValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#int",
+        "@value": "1"
+      }
+    ],
+    "http://purl.org/spar/bido/isDefinedIn": [
+      {
+        "@id": "http://purl.org/spar/bido/acl-1-5"
+      }
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:acl-1-5-acl1 .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The value 1 in a discrete scale from 1 to 5 for review rating."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/bido-review-measures/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "1 out of 5 (Discrete 1 to 5 review rating scale)"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "http://purl.org/spar/bido/acl-1-5-acl1"
+      },
+      {
+        "@id": "http://purl.org/spar/bido/ex-null-null"
+      }
+    ]
+  }
+]

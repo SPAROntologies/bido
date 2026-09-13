@@ -1,0 +1,23 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:a-r-ts a bido:DiscreteReviewRatingScale,
+        owl:NamedIndividual ;
+    rdfs:label "Accept to Reject, Two Strikes review rating scale"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:a-r-ts-acc .
+
+    bido:a-r-ts-acc
+        bido:isDefinedIn bido:a-r-ts .
+    """ ;
+    rdfs:comment "Discrete scale from 'Accept' to 'Reject', including pre-screening and two strikes rule."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    vs:term_status reg:statusStable .
+

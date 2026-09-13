@@ -1,0 +1,26 @@
+_:N686974cb2e5143fb80d0da569070deea <http://www.w3.org/2002/07/owl#allValuesFrom> _:Na4ecef42d3ba4339956c910dece174ea .
+_:N24def708828848a19dc61ed4a9cceba7 <http://www.w3.org/2002/07/owl#onProperty> _:N06e6cf2b096341e3b93d75f82d94df27 .
+_:N686974cb2e5143fb80d0da569070deea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:N06e6cf2b096341e3b93d75f82d94df27 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/hasMeasure> .
+_:N686974cb2e5143fb80d0da569070deea <http://www.w3.org/2002/07/owl#onProperty> _:N5040817ae61d4a4f893222e8d2ef8a1c .
+_:N7c0f25dcd3664d6c97d843de7c86801f <http://www.w3.org/2002/07/owl#allValuesFrom> _:N686974cb2e5143fb80d0da569070deea .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:N24def708828848a19dc61ed4a9cceba7 .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:Ndc736f4733464430b5ed6f688e151b39 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N5040817ae61d4a4f893222e8d2ef8a1c <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;\n        bido:hasMeasure bido:submissions-sent-for-review ;\n        bido:hasNumericValue \"200\"^^xsd:float .\n    " .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of submitted papers assigned to reviewers for revision."@en .
+_:Nc504437f28b342e89416114b4501d343 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:N7c0f25dcd3664d6c97d843de7c86801f <http://www.w3.org/2002/07/owl#onProperty> _:Ndc736f4733464430b5ed6f688e151b39 .
+_:N24def708828848a19dc61ed4a9cceba7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/BibliometricMeasure> .
+_:Na4ecef42d3ba4339956c910dece174ea <http://www.w3.org/2002/07/owl#unionOf> _:Nc504437f28b342e89416114b4501d343 .
+_:Nc504437f28b342e89416114b4501d343 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ne367cf7002d24760a45b1f89cc03b845 .
+<http://purl.org/spar/bido/submissions-sent-for-review> <http://www.w3.org/2000/01/rdf-schema#label> "number of submission sent for review"@en .
+_:Na4ecef42d3ba4339956c910dece174ea <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Ne367cf7002d24760a45b1f89cc03b845 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ne367cf7002d24760a45b1f89cc03b845 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+_:N24def708828848a19dc61ed4a9cceba7 <http://www.w3.org/2002/07/owl#allValuesFrom> _:N7c0f25dcd3664d6c97d843de7c86801f .
+_:N7c0f25dcd3664d6c97d843de7c86801f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .

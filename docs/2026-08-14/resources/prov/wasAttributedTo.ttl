@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+prov:wasAttributedTo a owl:ObjectProperty ;
+    rdfs:label "was attributed to"@en ;
+    rdfs:comment "The relation between an entity ascribed to an agent and that agent."@en ;
+    rdfs:isDefinedBy prov: ;
+    rdfs:range prov:Agent .
+

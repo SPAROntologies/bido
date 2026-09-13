@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="N5f11a94105d947788d25d314127846e3">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/PeerReviewType">
+    <rdfs:comment xml:lang="en">A type of of peer review process, such as 'double-blind' or 'open'.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N7466940061e748faa4dea3c7d393a2b8"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:double-blind-peer-review .
+
+    :double-blind-peer-review a bido:PeerReviewType .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <rdfs:label xml:lang="en">peer review type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N45d512e8194d488494d0bc9d6fba46fe">
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <rdf:rest rdf:nodeID="Nea41890716ec474eb512f177e93ec27c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nea41890716ec474eb512f177e93ec27c">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd1db3492a96640e19f9e6f7b4b510360">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N4bca3d83c1044d009a08fda314dcff12"/>
+    <owl:onProperty rdf:nodeID="N8addcb8229f946508dd4d0d87a1afd55"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4bca3d83c1044d009a08fda314dcff12">
+    <owl:unionOf rdf:nodeID="N45d512e8194d488494d0bc9d6fba46fe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8addcb8229f946508dd4d0d87a1afd55">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7466940061e748faa4dea3c7d393a2b8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="Nd1db3492a96640e19f9e6f7b4b510360"/>
+    <owl:onProperty rdf:nodeID="N5f11a94105d947788d25d314127846e3"/>
+  </rdf:Description>
+</rdf:RDF>

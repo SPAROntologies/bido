@@ -1,0 +1,34 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix ns2: <http://purl.org/spar/fabio/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:ScholarlyVenueManagementSystem a owl:Class ;
+    rdfs:label "scholarly venue management system"@en ;
+    vann:example """
+    :my-academic-event a swc:AcademicEvent ;
+        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:conference-management-toolkit .
+        
+    bido:conference-management-toolkit a bido:ScholarlyVenueManagementSystem .
+    """ ;
+    rdfs:comment "A venue management system (such as a conference management system, or a journal management system) that can be used for managing scholarly venues."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Class ;
+                            owl:unionOf ( ns3:AcademicEvent ns2:Expression ) ] ;
+                    owl:onProperty [ owl:inverseOf bido:holdsBibliometricDataInTime ] ] ;
+            owl:onProperty [ owl:inverseOf bido:withBibliometricData ] ],
+        bido:CategorialBibliometricData ;
+    vs:term_status reg:statusStable .
+

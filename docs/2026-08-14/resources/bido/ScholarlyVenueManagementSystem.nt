@@ -1,0 +1,22 @@
+_:N16882ffe7d904f1c88453eda9042ccd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N89f33ed1c28c4745b24148a36456c4e5 .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://purl.org/vocab/vann/example> "\n    :my-academic-event a swc:AcademicEvent ;\n        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .\n\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:conference-management-toolkit .\n        \n    bido:conference-management-toolkit a bido:ScholarlyVenueManagementSystem .\n    " .
+_:N84c30110e94943a3afdb850f78402d0c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N84c30110e94943a3afdb850f78402d0c <http://www.w3.org/2002/07/owl#allValuesFrom> _:N96991745140b482fade64a8401fbd84f .
+_:N20c68e0e8fb349ab84268b0f93394988 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/withBibliometricData> .
+_:N96991745140b482fade64a8401fbd84f <http://www.w3.org/2002/07/owl#onProperty> _:N481f7e123645402eae7949b19bf9d8ea .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A venue management system (such as a conference management system, or a journal management system) that can be used for managing scholarly venues."@en .
+_:N96991745140b482fade64a8401fbd84f <http://www.w3.org/2002/07/owl#allValuesFrom> _:N3af6f524c1dd403fbbd46331952ee23f .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N84c30110e94943a3afdb850f78402d0c .
+_:N84c30110e94943a3afdb850f78402d0c <http://www.w3.org/2002/07/owl#onProperty> _:N20c68e0e8fb349ab84268b0f93394988 .
+_:N16882ffe7d904f1c88453eda9042ccd4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> .
+_:N96991745140b482fade64a8401fbd84f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:N89f33ed1c28c4745b24148a36456c4e5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:N3af6f524c1dd403fbbd46331952ee23f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N89f33ed1c28c4745b24148a36456c4e5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N481f7e123645402eae7949b19bf9d8ea <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/holdsBibliometricDataInTime> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/bido/CategorialBibliometricData> .
+<http://purl.org/spar/bido/ScholarlyVenueManagementSystem> <http://www.w3.org/2000/01/rdf-schema#label> "scholarly venue management system"@en .
+_:N3af6f524c1dd403fbbd46331952ee23f <http://www.w3.org/2002/07/owl#unionOf> _:N16882ffe7d904f1c88453eda9042ccd4 .

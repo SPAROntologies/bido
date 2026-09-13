@@ -1,0 +1,28 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix ns1: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:withBibliometricData a owl:ObjectProperty ;
+    rdfs:label "with bibliometric data",
+        "with bibliometric data"@en ;
+    vann:example """
+    :my-journal a fabio:Journal ;
+        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-numeric-bibliometric-data .
+    """ ;
+    rdfs:comment "A relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity.",
+        "The relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity.",
+        "The relation between an entity's bibliometric data in time and a definition of the type of bibliometric data held by this entity."@en ;
+    rdfs:domain bido:BibliometricDataInTime ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
+    rdfs:range bido:BibliometricData ;
+    rdfs:subPropertyOf ns1:withValue ;
+    vs:term_status reg:statusStable .
+

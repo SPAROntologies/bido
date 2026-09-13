@@ -1,0 +1,4 @@
+<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.semanticweb.org/ns/swc/ontology#> .
+<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "academic event" .
+<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.semanticweb.org/ns/swc/ontology#AcademicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Any academic event such as conferences, workshops, symposia." .

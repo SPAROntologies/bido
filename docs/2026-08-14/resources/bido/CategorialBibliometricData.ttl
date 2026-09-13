@@ -1,0 +1,35 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:CategorialBibliometricData a owl:Class ;
+    rdfs:label "categorial bibliometric data"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-categorial-bibliometric-data .
+
+    :my-categorial-bibliometric-data a bido:CategorialBibliometricData .
+    """,
+        """
+    :my-research-category a bido:ResearchCareerCategory ;
+        bido:hasCurve :my-curve ;
+        bido:hasSlope :my-slope ;
+        bido:hasOrderOfMagnitude bido:243-729 ;
+        bido:concernsResearchPeriod bido:5-years-beginning .
+
+    bido:ResearchCareerCategory rdfs:subClassOf bido:CategorialBibliometricData .
+    """ ;
+    rdfs:comment "Categorical information that characterises publication-related entities from a bibliometric point of view."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
+    rdfs:subClassOf bido:BibliometricData,
+        skos:Concept ;
+    vs:term_status reg:statusStable .
+

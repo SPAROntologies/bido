@@ -1,0 +1,12 @@
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.org/spar/bido/dis-0-5-3> .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ReviewRatingValue> .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/2000/01/rdf-schema#comment> "The value 'Weak Accept' in a discrete scale from 'Strong Reject' to 'Strong Accept' for review rating."@en .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:sa-sr-bl-wacc .\n    " .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/2000/01/rdf-schema#label> "Weak Accept (Strong Reject to Strong Accept review rating scale)"@en .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://purl.org/spar/bido/isDefinedIn> <http://purl.org/spar/bido/sa-sr-bl> .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.org/spar/bido/sa-sr-nb-wacc> .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.org/spar/bido/a-r-ts-minrev> .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.org/spar/bido/a-na-wr-appwr> .
+<http://purl.org/spar/bido/sa-sr-bl-wacc> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .

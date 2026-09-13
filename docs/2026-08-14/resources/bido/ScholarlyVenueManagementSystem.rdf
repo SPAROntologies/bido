@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="N16882ffe7d904f1c88453eda9042ccd4">
+    <rdf:rest rdf:nodeID="N89f33ed1c28c4745b24148a36456c4e5"/>
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/ScholarlyVenueManagementSystem">
+    <vann:example>
+    :my-academic-event a swc:AcademicEvent ;
+        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:conference-management-toolkit .
+        
+    bido:conference-management-toolkit a bido:ScholarlyVenueManagementSystem .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A venue management system (such as a conference management system, or a journal management system) that can be used for managing scholarly venues.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N84c30110e94943a3afdb850f78402d0c"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/bido/CategorialBibliometricData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">scholarly venue management system</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N84c30110e94943a3afdb850f78402d0c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N96991745140b482fade64a8401fbd84f"/>
+    <owl:onProperty rdf:nodeID="N20c68e0e8fb349ab84268b0f93394988"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20c68e0e8fb349ab84268b0f93394988">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96991745140b482fade64a8401fbd84f">
+    <owl:onProperty rdf:nodeID="N481f7e123645402eae7949b19bf9d8ea"/>
+    <owl:allValuesFrom rdf:nodeID="N3af6f524c1dd403fbbd46331952ee23f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N89f33ed1c28c4745b24148a36456c4e5">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3af6f524c1dd403fbbd46331952ee23f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N16882ffe7d904f1c88453eda9042ccd4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N481f7e123645402eae7949b19bf9d8ea">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,9 @@
+<http://purl.org/spar/bido/dis-0-10-9> <http://purl.org/spar/bido/isDefinedIn> <http://purl.org/spar/bido/dis-0-10> .
+<http://purl.org/spar/bido/dis-0-10-9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/bido/ReviewRatingValue> .
+<http://purl.org/spar/bido/dis-0-10-9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/bido/dis-0-10-9> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/dis-0-10-9> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        tvc:atTime :my-time-interval ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData bido:dis-0-10-9 .\n    " .
+<http://purl.org/spar/bido/dis-0-10-9> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/dis-0-10-9> <http://www.w3.org/2000/01/rdf-schema#comment> "The value 9 in a discrete scale from 0 to 10 for review rating."@en .
+<http://purl.org/spar/bido/dis-0-10-9> <http://purl.org/spar/bido/hasRatingValue> "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://purl.org/spar/bido/dis-0-10-9> <http://www.w3.org/2000/01/rdf-schema#label> "9 out of 10 (Discrete 0 to 10 review rating scale)"@en .

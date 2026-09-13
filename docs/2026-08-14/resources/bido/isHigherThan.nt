@@ -1,0 +1,9 @@
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#label> "is higher than"@en .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/bido/isLowerThan> .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-review-measures/> .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/bido/CategorialBibliometricData> .
+<http://purl.org/spar/bido/isHigherThan> <http://purl.org/vocab/vann/example> "\n    bido:core-a a bido:ConferenceRankingCategory ;\n        bido:isHigherThan bido:core-b .\n    \n    bido:core-b a bido:ConferenceRankingCategory .\n    " .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a ranking category and another that is less important."@en .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/CategorialBibliometricData> .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/isHigherThan> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

@@ -1,0 +1,21 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:BibliometricMeasure a owl:Class ;
+    rdfs:label "bibliometric measure",
+        "bibliometric measure"@en ;
+    vann:example """
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:journal-impact-factor .
+
+    bido:journal-impact-factor a bido:BibliometricMeasure .
+    """ ;
+    rdfs:comment "Any kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor).",
+        "Any kind of measure related with a bibliometric data (e.g., h-index, e-index, journal impact factor)."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-core/> ;
+    vs:term_status reg:statusStable .
+

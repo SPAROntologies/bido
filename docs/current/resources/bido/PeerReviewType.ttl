@@ -1,0 +1,31 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix ns2: <http://purl.org/spar/fabio/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:PeerReviewType a owl:Class ;
+    rdfs:label "peer review type"@en ;
+    vann:example """
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData bido:double-blind-peer-review .
+
+    :double-blind-peer-review a bido:PeerReviewType .
+    """ ;
+    rdfs:comment "A type of of peer review process, such as 'double-blind' or 'open'."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Class ;
+                            owl:unionOf ( ns3:AcademicEvent ns2:Expression ) ] ;
+                    owl:onProperty [ owl:inverseOf bido:holdsBibliometricDataInTime ] ] ;
+            owl:onProperty [ owl:inverseOf bido:withBibliometricData ] ],
+        bido:CategorialBibliometricData ;
+    vs:term_status reg:statusStable .
+

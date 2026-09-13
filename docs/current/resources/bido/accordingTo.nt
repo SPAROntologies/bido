@@ -1,0 +1,10 @@
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/bido-core/> .
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/bido/accordingTo> <http://purl.org/vocab/vann/example> "\n    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;\n        bido:accordingTo :my-organization ;\n        bido:withBibliometricData :my-numeric-bibliometric-data .\n\n    :my-organization a prov:Agent .\n    " .
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/bido/BibliometricDataInTime> .
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/2000/01/rdf-schema#label> "according to"@en .
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasAttributedTo> .
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a bibliometric data in time situation and an agent who provided such data."@en .
+<http://purl.org/spar/bido/accordingTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2012/04/tvc/withinContext> .

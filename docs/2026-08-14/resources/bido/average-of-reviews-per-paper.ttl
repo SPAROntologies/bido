@@ -1,0 +1,38 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix ns2: <http://purl.org/spar/fabio/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+bido:average-of-reviews-per-paper a [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:allValuesFrom [ a owl:Restriction ;
+                            owl:allValuesFrom [ a owl:Class ;
+                                    owl:unionOf ( ns3:AcademicEvent ns2:Expression ) ] ;
+                            owl:onProperty [ owl:inverseOf bido:holdsBibliometricDataInTime ] ] ;
+                    owl:onProperty [ owl:inverseOf bido:withBibliometricData ] ] ;
+            owl:onProperty [ owl:inverseOf bido:hasMeasure ] ],
+        bido:BibliometricMeasure,
+        owl:NamedIndividual ;
+    rdfs:label "average number of reviews per paper" ;
+    vann:example """
+    :my-academic-event a swc:AcademicEvent ;
+        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-numeric-bibliometric-data .
+
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:average-of-reviews-per-paper ;
+        bido:hasNumericValue "3.5"^^xsd:float .
+    """ ;
+    rdfs:comment "A measure indicating how many reviewers has been used for each paper submitted to a venue." ;
+    rdfs:isDefinedBy <http://purl.org/spar/bido-review-measures/> ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="Na56868bef91840e1b3b98e09e7d5654f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Na068759c07c54fbbb006d5cef683b526"/>
+    <owl:allValuesFrom rdf:nodeID="Nc34070d62c36477ba4e556a817820abd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb941249f67c447f7a69523e3b5425ef7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N917bb9bc7fe4435780bbb95e043182cb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4193175ee83e43d9ad78f8e9270e7e6f">
+    <rdf:first rdf:resource="http://purl.org/spar/fabio/Expression"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/bido/external-reviewers-involved">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/bido-review-measures/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://purl.org/spar/bido/BibliometricMeasure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:nodeID="Na56868bef91840e1b3b98e09e7d5654f"/>
+    <rdfs:comment>A measure indicating how many external reviewers have been involved in the reviewing phase.</rdfs:comment>
+    <rdfs:label>number of external reviewers involved</rdfs:label>
+    <vann:example>
+    :my-academic-event a swc:AcademicEvent ;
+        bido:holdsBibliometricDataInTime :my-bibliometric-data-in-time .
+
+    :my-bibliometric-data-in-time a bido:BibliometricDataInTime ;
+        tvc:atTime :my-time-interval ;
+        bido:accordingTo :my-organization ;
+        bido:withBibliometricData :my-numeric-bibliometric-data .
+
+    :my-numeric-bibliometric-data a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:external-reviews-involved ;
+        bido:hasNumericValue "20"^^xsd:float .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbde330f7f0d04100847f89c09cebebce">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/withBibliometricData"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N375db898ec284cfea583afd2455fdb53">
+    <owl:onProperty rdf:nodeID="N9664a14934574d86ace26a494e5b9e3a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="Nb941249f67c447f7a69523e3b5425ef7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc34070d62c36477ba4e556a817820abd">
+    <owl:onProperty rdf:nodeID="Nbde330f7f0d04100847f89c09cebebce"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="N375db898ec284cfea583afd2455fdb53"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N917bb9bc7fe4435780bbb95e043182cb">
+    <rdf:first rdf:resource="http://data.semanticweb.org/ns/swc/ontology#AcademicEvent"/>
+    <rdf:rest rdf:nodeID="N4193175ee83e43d9ad78f8e9270e7e6f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9664a14934574d86ace26a494e5b9e3a">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/holdsBibliometricDataInTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na068759c07c54fbbb006d5cef683b526">
+    <owl:inverseOf rdf:resource="http://purl.org/spar/bido/hasMeasure"/>
+  </rdf:Description>
+</rdf:RDF>
