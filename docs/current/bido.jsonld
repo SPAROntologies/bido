@@ -6,25 +6,19 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/elements/1.1/date",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@id": "http://purl.org/dc/elements/1.1/contributor",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
     "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
@@ -42,10 +36,10 @@
     ],
     "http://purl.org/dc/elements/1.1/creator": [
       {
-        "@value": "Francesco Osborne (https://orcid.org/0000-0001-6557-3131)"
+        "@value": "Enrico Motta (https://orcid.org/0000-0003-0015-1952)"
       },
       {
-        "@value": "Enrico Motta (https://orcid.org/0000-0003-0015-1952)"
+        "@value": "Francesco Osborne (https://orcid.org/0000-0001-6557-3131)"
       },
       {
         "@value": "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)"
@@ -151,10 +145,10 @@
     ],
     "http://www.w3.org/2002/07/owl#imports": [
       {
-        "@id": "http://purl.org/spar/bido-review-measures"
+        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures"
       },
       {
-        "@id": "http://purl.org/spar/bido-standard-bibliometric-measures"
+        "@id": "http://purl.org/spar/bido-review-measures"
       },
       {
         "@id": "http://purl.org/spar/bido-research-career-category"
@@ -187,19 +181,19 @@
     ],
     "https://schema.org/image": [
       {
-        "@id": "https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-research-career-category.png"
-      },
-      {
-        "@id": "https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-standard-bibliometric-measures.png"
-      },
-      {
         "@id": "https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-review-measures.png"
+      },
+      {
+        "@id": "https://github.com/SPAROntologies/bido/blob/master/docs/current/bido.png"
+      },
+      {
+        "@id": "https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-research-career-category.png"
       },
       {
         "@id": "https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-core.png"
       },
       {
-        "@id": "https://github.com/SPAROntologies/bido/blob/master/docs/current/bido.png"
+        "@id": "https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-standard-bibliometric-measures.png"
       }
     ],
     "https://schema.org/includedInDataCatalog": [
@@ -210,23 +204,7 @@
     "https://schema.org/keywords": [
       {
         "@language": "en",
-        "@value": "bibliometric data"
-      },
-      {
-        "@language": "en",
-        "@value": "Semantic Publishing and Referencing Ontologies"
-      },
-      {
-        "@language": "en",
-        "@value": "SPAR Ontologies"
-      },
-      {
-        "@language": "en",
         "@value": "scholarly publishing"
-      },
-      {
-        "@language": "en",
-        "@value": "bibliometrics"
       },
       {
         "@language": "en",
@@ -234,12 +212,34 @@
       },
       {
         "@language": "en",
+        "@value": "SPAR Ontologies"
+      },
+      {
+        "@language": "en",
+        "@value": "bibliometrics"
+      },
+      {
+        "@language": "en",
         "@value": "scientometrics"
+      },
+      {
+        "@language": "en",
+        "@value": "Semantic Publishing and Referencing Ontologies"
+      },
+      {
+        "@language": "en",
+        "@value": "bibliometric data"
       }
     ]
   },
   {
-    "@id": "http://purl.org/dc/elements/1.1/contributor",
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
