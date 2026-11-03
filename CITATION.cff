@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+title: The Bibliometric Data Ontology (BiDO)
+message: >-
+If you use this software, please cite it using the
+metadata from this file.
+type: software
+authors:
+- given-names: Enrico
+  family-names: Motta
+  orcid: 'https://orcid.org/0000-0003-0015-1952'
+- given-names: Francesco
+  family-names: Osborne
+  orcid: 'https://orcid.org/0000-0001-6557-3131'
+- given-names: Silvio
+  family-names: Peroni
+  orcid: 'https://orcid.org/0000-0003-0530-4305'
+identifiers:
+- type: doi
+  value: 10.25504/FAIRsharing.d7f0a9
+repository-code: 'https://github.com/SPAROntologies/bido'
+url: 'http://www.sparontologies.net/ontologies/bido'
+abstract: The Bibliometric Data Ontology (BiDO) is a modular ontology that allows the description of numerical and categorical bibliometric data (e.g., journal impact factor, author h-index, categories describing research careers) in RDF. 
+keywords:
+- bibliometric data
+- bibliometrics
+- scholarly publishing
+- scientometrics
+- semantic publishing
+license: CC-BY-4.0
+version: 1.2.2
+date-released: '2026-10-05'
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Osborne"
+    given-names: "Francesco"
+    orcid: "https://orcid.org/0000-0001-6557-3131"
+  - family-names: "Motta"
+    given-names: "Enrico"
+    orcid: "https://orcid.org/0000-0003-0015-1952"
+  - family-names: "Peroni"
+    given-names: "Silvio"
+    orcid: "http://orcid.org/0000-0003-0530-4305"
+  url: "http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf"
+  collection-title: "Proceedings of the 4th Workshop on Linked Science (LISC 2014)"
+  collection-type: "proceedings"
+  editors:
+  - family-names: "Zhao"
+    given-names: "J."
+  - family-names: "van Erp"
+    given-names: "M."
+  - family-names: "Keßler"
+    given-names: "C."
+  - family-names: "Kauppinen"
+    given-names: "T."
+  - family-names: "van Ossenbruggen"
+    given-names: "J."
+  - family-names: "van Hage"
+    given-names: "W. R."
+  volume: 1282
+  notes: "CEUR Workshop Proceedings"
+  title: "Clustering Citation Distributions for Semantic Categorization and Citation Prediction"
+  year: 2014
+  publisher:
+    name: "CEUR-WS.org"
+    city: "Aachen"
+    country: "DE"
