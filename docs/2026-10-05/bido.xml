@@ -10,49 +10,43 @@
    xmlns:schema="https://schema.org/"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/bido">
-    <dcterms:issued>2015-07-13</dcterms:issued>
-    <dcterms:source rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/cq.md"/>
-    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-research-career-category.png"/>
-    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-standard-bibliometric-measures.png"/>
-    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-review-measures.png"/>
-    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-core.png"/>
-    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido.png"/>
-    <owl:versionInfo>1.2.2</owl:versionInfo>
     <ns2:doi>https://doi.org/10.25504/FAIRsharing.d7f0a9</ns2:doi>
-    <schema:keywords xml:lang="en">bibliometric data</schema:keywords>
-    <schema:keywords xml:lang="en">Semantic Publishing and Referencing Ontologies</schema:keywords>
-    <schema:keywords xml:lang="en">SPAR Ontologies</schema:keywords>
-    <schema:keywords xml:lang="en">scholarly publishing</schema:keywords>
-    <schema:keywords xml:lang="en">bibliometrics</schema:keywords>
-    <schema:keywords xml:lang="en">semantic publishing</schema:keywords>
-    <schema:keywords xml:lang="en">scientometrics</schema:keywords>
-    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/bido/2026-08-14"/>
-    <vann:preferredNamespaceUri xml:lang="en">http://purl.org/spar/bido</vann:preferredNamespaceUri>
+    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-review-measures.png"/>
+    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido.png"/>
+    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-research-career-category.png"/>
+    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-core.png"/>
+    <schema:image rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-standard-bibliometric-measures.png"/>
     <dcterms:modified>2026-10-05</dcterms:modified>
-    <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/bido"/>
-    <dc:creator>Francesco Osborne (https://orcid.org/0000-0001-6557-3131)</dc:creator>
-    <dc:creator>Enrico Motta (https://orcid.org/0000-0003-0015-1952)</dc:creator>
-    <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
-    <owl:versionIRI rdf:resource="http://purl.org/spar/bido/2026-10-05"/>
-    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</dc:contributor>
-    <owl:priorVersion rdf:resource="http://purl.org/spar/bido/2026-08-14"/>
-    <dcterms:created>2014-08-11</dcterms:created>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <dc:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+    <schema:keywords xml:lang="en">scholarly publishing</schema:keywords>
+    <schema:keywords xml:lang="en">semantic publishing</schema:keywords>
+    <schema:keywords xml:lang="en">SPAR Ontologies</schema:keywords>
+    <schema:keywords xml:lang="en">bibliometrics</schema:keywords>
+    <schema:keywords xml:lang="en">scientometrics</schema:keywords>
+    <schema:keywords xml:lang="en">Semantic Publishing and Referencing Ontologies</schema:keywords>
+    <schema:keywords xml:lang="en">bibliometric data</schema:keywords>
     <vann:changes rdf:resource="https://github.com/SPAROntologies/bido/blob/master/CHANGELOG.md"/>
-    <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
-    <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/bido"/>
-    <dcterms:bibliographicCitation>Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf</dcterms:bibliographicCitation>
-    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-    <dcterms:publisher rdf:resource="https://ror.org/00wb4mk85"/>
-    <vann:preferredNamespacePrefix xml:lang="en">bido</vann:preferredNamespacePrefix>
-    <owl:imports rdf:resource="http://purl.org/spar/bido-review-measures"/>
     <owl:imports rdf:resource="http://purl.org/spar/bido-standard-bibliometric-measures"/>
+    <owl:imports rdf:resource="http://purl.org/spar/bido-review-measures"/>
     <owl:imports rdf:resource="http://purl.org/spar/bido-research-career-category"/>
+    <schema:includedInDataCatalog rdf:resource="https://fairsharing.org/"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</dc:contributor>
     <dc:title>The Bibliometric Data Ontology (BiDO)</dc:title>
-    <dc:date>2026-10-05</dc:date>
+    <vann:preferredNamespacePrefix xml:lang="en">bido</vann:preferredNamespacePrefix>
+    <owl:versionInfo>1.2.2</owl:versionInfo>
+    <dc:creator>Enrico Motta (https://orcid.org/0000-0003-0015-1952)</dc:creator>
+    <dc:creator>Francesco Osborne (https://orcid.org/0000-0001-6557-3131)</dc:creator>
+    <dc:creator>Silvio Peroni (http://orcid.org/0000-0003-0530-4305)</dc:creator>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
     <foaf:logo rdf:resource="https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png"/>
+    <dcterms:source rdf:resource="https://github.com/SPAROntologies/bido/blob/master/docs/cq.md"/>
+    <dc:language rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+    <rdfs:seeAlso rdf:resource="http://www.sparontologies.net/ontologies/bido"/>
+    <owl:priorVersion rdf:resource="http://purl.org/spar/bido/2026-08-14"/>
+    <owl:versionIRI rdf:resource="http://purl.org/spar/bido/2026-10-05"/>
     <dc:description xml:lang="en">
 The **_Bibliometric Data Ontology (BiDO)_** is a modular OWL 2 ontology that allows the description of bibliometric data in RDF.
 
@@ -309,25 +303,31 @@ What categorical bibliometric rankings or measures (such as conference ranks or 
     }
 
 </dc:description>
+    <dcterms:issued>2015-07-13</dcterms:issued>
+    <dcterms:created>2014-08-11</dcterms:created>
+    <dc:date>2026-10-05</dc:date>
+    <vann:preferredNamespaceUri xml:lang="en">http://purl.org/spar/bido</vann:preferredNamespaceUri>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <schema:codeRepository rdf:resource="https://github.com/SPAROntologies/bido"/>
+    <dcterms:bibliographicCitation>Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf</dcterms:bibliographicCitation>
+    <owl:backwardCompatibleWith rdf:resource="http://purl.org/spar/bido/2026-08-14"/>
     <rdfs:label>Bibliometric Data Ontology (BiDO)</rdfs:label>
+    <dcterms:publisher rdf:resource="https://ror.org/00wb4mk85"/>
     <ns2:status rdf:resource="http://purl.org/ontology/bibo/status/published"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
 </rdf:RDF>
