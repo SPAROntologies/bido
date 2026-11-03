@@ -1,0 +1,333 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:contributor a owl:AnnotationProperty .
+
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+<http://purl.org/spar/bido> a owl:Ontology ;
+    rdfs:label "Bibliometric Data Ontology (BiDO)" ;
+    dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
+    dc:creator "Enrico Motta (https://orcid.org/0000-0003-0015-1952)",
+        "Francesco Osborne (https://orcid.org/0000-0001-6557-3131)",
+        "Silvio Peroni (http://orcid.org/0000-0003-0530-4305)" ;
+    dc:date "2026-10-05" ;
+    dc:description """
+The **_Bibliometric Data Ontology (BiDO)_** is a modular OWL 2 ontology that allows the description of bibliometric data in RDF.
+
+![](bido.png)
+
+The [**_core_**](http://purl.org/spar/bido-core) module of the ontology allows us to describe any entity and the related bibliometric data (through the property `bido:holdsBibliometricDataInTime`) at a certain time (i.e., `tvc:atTime`, a property defined by the imported [TVC ontology design pattern](http://purl.org/spar/tvc) for specifying temporal instants or intervals) and according to a certain agent (through the property `bido:accordingTo`, which is a sub-property of `prov:wasAttributedTo` and allows us to indicate the agent responsible for such bibliometric data). 
+In addition, BiDO imports PROV-O for adding provenance data about the activities related to the creation of such bibliometric data.
+Two alternative kinds of bibliometric data are specifiable (through the property `bido:withBibliometricData`) in BiDO: numeric and categorial bibliometric data. 
+Numeric bibliometric data are those characterised by a certain integer or float value related to a particular bibliometric measure, while categorial data are those characterised by the assignment of certain categories to a particular bibliographic resource.
+
+![](bido-core.png)
+
+Currently, BiDO is composed by three different modules, each extending the core one.
+
+[**_Standard bibliometric measures._**](http://purl.org/spar/bido-standard-bibliometric-measures) This module defines a list of possible bibliometric measures that can be used to define bibliometric data of publication-related entities, e.g.: h-index, e-index, journal impact factor, author citation count.
+
+![](bido-standard-bibliometric-measures.png)
+
+[**_Research career chategories._**](http://purl.org/spar/bido-research-career-category) This module extends the class `bido:CategorialBibliometricData` of the core module with specific categories describing the research career of people described in terms of the specific facets:
+    * the research period considered, i.e., the interval of research years that the algorithm is taking into consideration (e.g., the first 5/10 years);
+    * the kind of curve of the citations received by an author according to the aforementioned period, which is characterised by a trend (flat/increasing/decreasing) and, in the latter two cases, by an acceleration or deceleration point (none or premature, median, overdue acceleration/deceleration);
+    * the slope of such curve, in terms of strength (low/moderate/high) and kind of growth (linear/polynomial/exponential/logarithmic);
+    * the order of magnitude, which categorises the number of citations received in the considered period according to a uniform model of common-sense estimation, which describes intervals of half-order of magnitude – i.e., “[0,1)”, “[1,3)”, “[3,9)”, “[9,27)”, “[27,81)”, “[81,243)”, “[243,729)”, etc.
+
+![](bido-research-career-category.png)
+
+[**_Review measures._**](http://purl.org/spar/bido-review-measures) The need of describing aspects related to the review process is an important aspect to address by publishers (e.g., Springer) for keeping track of crucial information about conferences and journals. 
+In addition, these data can be crucial for assessing the quality of the venues where researchers publish papers. 
+This module of BiDO describes a list of possible reviews measures that can be used to define bibliometric data of scholarly venues such as conferences, workshops, and journals.
+
+![](bido-review-measures.png)
+
+## Examples of use
+
+In the following subsections, we introduce some examples to showcase how to use BiDO. 
+
+The prefixes that are used in all the examples provided below are defined as follows:
+
+    @prefix : <http://www.sparontologies.net/example/> .
+    @prefix bido: <http://purl.org/spar/bido/> .
+    @prefix cito: <http://purl.org/spar/cito/> .
+    @prefix conf: <http://lod.springer.com/data_v2/conference/> .
+    @prefix fabio: <http://purl.org/spar/fabio/> .
+    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+    @prefix frbr: <http://purl.org/vocab/frbr/core#> .
+    @prefix journal: <http://www.journals.elsevier.com/> .
+    @prefix onto: <http://lod.springer.com/data_v2/ontology/class/> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix time: <http://www.w3.org/2006/time#> .
+    @prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Specifying the impact factor of a journal 
+
+Numeric bibliometric data are those characterised by a certain integer or float value related to a particular bibliometric measure. 
+BiDO allows one to specify these measures – e.g., h-index, author citation count, e-index, and journal impact factor – to bibliographic resources. 
+For instance, in the following example we assign the 2014 Impact Factor to the Journal of Web Semantics.
+
+    journal:journal-of-web-semantics a fabio:Journal ;
+        bido:holdsBibliometricDataInTime :web-semantics-if-2014 .
+
+    :web-semantics-if-2014 a bido:BibliometricDataInTime ;
+        tvc:atTime :2015-validity-period ;
+        bido:accordingTo :thomson-reuters ;
+        bido:withBibliometricData :web-semantics-if-2014-value .
+
+    :2015-validity-period a time:Interval ;
+        time:hasBeginning :2015-01-01 ;
+        time:hasEnd :2015-12-31 .
+
+    :web-semantics-if-2014-value a bido:NumericBibliometricData ;
+        bido:hasMeasure bido:journal-impact-factor ;
+        bido:hasNumericValue "2.464"^^xsd:float .
+
+    :thomson-reuters a foaf:Organization ;
+        foaf:homepace <http://thomsonreuters.com> .
+
+### Assigning a research career category to a person
+
+The module of BiDO for describing research career chategories allows one to assign specific categories describing kinds of research careers to people, as described in the following paper:
+
+    Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. 
+    In Zhao, J., van Erp, M., Keßler, C., Kauppinen, T., van Ossenbruggen, J., van Hage, W. R. (Eds.), Proceedings of the 4th Workshop 
+    on Linked Science (LISC 2014), CEUR Workshop Proceedings 1282: 24–35. Aachen, Germany: CEUR-WS.org. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf
+
+For instance, in the example we assign a particular research category (defined mainly by mathematical and geometrical features) to John Doe.
+
+    :john-doe a foaf:Person ;
+        bido:holdsBibliometricDataInTime :5-years-research-career .
+
+    :5-years-research-career a bido:BibliometricDataInTime ;
+        tvc:atTime :since-july-2014 ;
+        bido:accordingTo :research-career-algorithm ;
+        bido:withBibliometricData
+            :increasing-with-prem-dec-and-low-log-slope-in-243-729-5-y-beg .
+
+    :since-july-2014 a time:Interval ;
+        time:hasBeginning :2014-07-11 .
+
+    :research-career-algorithm a fabio:Algorithm ;
+        cito:isDescribedBy <http://ceur-ws.org/Vol-1282/lisc2014_submission_9> ;
+        frbr:realization :algorithm-implementation .
+
+    :algorithm-implementation a fabio:ComputerProgram .
+
+    :increasing-with-prem-dec-and-low-log-slope-in-243-729-5-y-beg
+        a bido:ResearchCareerCategory ;
+        bido:hasCurve :increasing-curve-with-premature-deceleration ;
+        bido:hasSlope :low-logarithmic-slope ;
+        bido:hasOrderOfMagnitude bido:243-729 ;
+        bido:concernsResearchPeriod bido:5-years-beginning .
+
+    :increasing-curve-with-premature-deceleration a bido:Curve ;
+        bido:hasTrend bido:increasing ;
+        bido:hasAccelerationPoint :premature-deceleration .
+
+    :low-logarithmic-slope a bido:Slope ;
+        bido:hasStrength bido:low ;
+        bido:hasGrowth bido:logarithmic .
+
+### Conference rank and average of reviews per paper
+
+This example shows how to use BiDO for describing numeric and categorial bibliometric data related to a conference, i.e., the '5th International Conference on Automated Deduction'. 
+In particular, we specify average number of reviews per paper and the conference ranking that the conference has. 
+The particular module used for specifying such data is the Review Measures module.
+
+    conf:cade1980 a onto:Conference ;
+        rdfs:label
+            "5th International Conference on Automated Deduction" ;
+        bido:holdsBibliometricDataInTime
+            conf:cade1980-avg-num-reviews-per-paper ,
+            conf:cade1980-cff-rank .
+
+    conf:cade1980-avg-num-reviews-per-paper
+        a bido:BibliometricDataInTime ;
+        rdfs:label
+            "3 reviews per paper on average (according to Springer)" ;
+        bido:withBibliometricData
+            conf:cade1980-numeric-data-avg-num-reviews-per-paper ;
+        bido:accordingTo :springer .
+
+    :springer a foaf:Organization ;
+        rdfs:label "Springer" ;
+        foaf:homepage <http://www.springer.com> .
+
+    conf:cade1980-numeric-data-avg-num-reviews-per-paper
+        a bido:NumericBibliometricData ;
+        rdfs:label "3 reviews per paper on average" ;
+        bido:hasNumericValue "3"^^xsd:integer ;
+        bido:hasMeasure bido:average-of-reviews-per-paper .
+
+    conf:cade1980-cff-rank a bido:BibliometricDataInTime ;
+        rdfs:label "B (according to CORE)" ;
+        tvc:atTime :2015-validity-period ;
+        bido:withBibliometricData bido:core-b ;
+        bido:accordingTo :core .
+
+    :2015-validity-period a time:Interval ;
+        time:hasBeginning :2015-01-01 ;
+        time:hasEnd :2015-12-31 .
+
+    :core a foaf:Organization ;
+        rdfs:label
+            "Computing Research and Education Association of Australasia" ;
+        foaf:homepage <http://www.core.edu.au> .
+
+## Competency Questions
+
+BiDO can be used for answering several questions related to bibliometric data.
+
+In the following subsections, some of them are introduced together with their respective SPARQL queries. 
+
+The prefixes that are used in all the SPARQL queries provided below are defined as follows:
+
+    PREFIX bido: <http://purl.org/spar/bido/>
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+    PREFIX tvc: <http://www.essepuntato.it/2012/04/tvc/>
+    PREFIX time: <http://www.w3.org/2006/time#>
+
+### CQ1
+
+What numeric bibliometric data are held by an entity, and according to which source?
+
+    SELECT ?entity ?dataSituation ?source ?measure ?numericValue
+    WHERE {
+        ?entity bido:holdsBibliometricDataInTime ?dataSituation .
+        ?dataSituation a bido:BibliometricDataInTime ;
+            bido:withBibliometricData ?bibliometricData .
+        ?bibliometricData a bido:NumericBibliometricData ;
+            bido:hasMeasure ?measure ;
+            bido:hasNumericValue ?numericValue .
+        OPTIONAL { ?dataSituation bido:accordingTo ?source . }
+    }
+
+### CQ2
+
+What is the validity time interval for bibliometric data held in time?
+
+    SELECT ?entity ?dataSituation ?startDate ?endDate
+    WHERE {
+        ?entity bido:holdsBibliometricDataInTime ?dataSituation .
+        ?dataSituation a bido:BibliometricDataInTime ;
+            tvc:atTime ?timeInterval .
+        OPTIONAL { ?timeInterval time:hasBeginning ?startDate . }
+        OPTIONAL { ?timeInterval time:hasEnd ?endDate . }
+    }
+
+### CQ3
+
+Which research career category and detailed trajectory features are assigned to a person?
+
+    SELECT ?person ?category ?trend ?slopeStrength ?slopeGrowth ?orderOfMagnitude ?period
+    WHERE {
+        ?person a foaf:Person ;
+            bido:holdsBibliometricDataInTime ?dataSituation .
+        ?dataSituation bido:withBibliometricData ?category .
+        ?category a bido:ResearchCareerCategory .
+        OPTIONAL {
+            ?category bido:hasCurve ?curve .
+            ?curve bido:hasTrend ?trend .
+        }
+        OPTIONAL {
+            ?category bido:hasSlope ?slope .
+            ?slope bido:hasStrength ?slopeStrength ;
+                bido:hasGrowth ?slopeGrowth .
+        }
+        OPTIONAL { ?category bido:hasOrderOfMagnitude ?orderOfMagnitude . }
+        OPTIONAL { ?category bido:concernsResearchPeriod ?period . }
+    }
+
+### CQ4
+
+Which algorithms or organizations produce or evaluate bibliometric data held by an entity?
+
+    SELECT ?entity ?dataSituation ?source ?sourceType
+    WHERE {
+        ?entity bido:holdsBibliometricDataInTime ?dataSituation .
+        ?dataSituation a bido:BibliometricDataInTime ;
+            bido:accordingTo ?source .
+        OPTIONAL { ?source a ?sourceType . }
+    }
+
+### CQ5
+
+What categorical bibliometric rankings or measures (such as conference ranks or categorical reviews) are assigned to an entity?
+
+    SELECT ?entity ?dataSituation ?bibliometricData ?source
+    WHERE {
+        ?entity bido:holdsBibliometricDataInTime ?dataSituation .
+        ?dataSituation a bido:BibliometricDataInTime ;
+            bido:withBibliometricData ?bibliometricData .
+        OPTIONAL { ?dataSituation bido:accordingTo ?source . }
+        FILTER NOT EXISTS { ?bibliometricData a bido:NumericBibliometricData . }
+    }
+
+"""@en ;
+    dc:title "The Bibliometric Data Ontology (BiDO)" ;
+    dcterms:bibliographicCitation "Osborne, F., Peroni, S., Motta, E. (2014). Clustering Citation Distributions for Semantic Categorization and Citation Prediction. In Proceedings of the 4th Workshop on Linked Science (LISC 2014): 24–35. http://ceur-ws.org/Vol-1282/lisc2014_submission_9.pdf" ;
+    dcterms:created "2014-08-11" ;
+    dcterms:issued "2015-07-13" ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-05" ;
+    dcterms:publisher <https://ror.org/00wb4mk85> ;
+    dcterms:source <https://github.com/SPAROntologies/bido/blob/master/docs/cq.md> ;
+    bibo:doi "https://doi.org/10.25504/FAIRsharing.d7f0a9" ;
+    bibo:status <http://purl.org/ontology/bibo/status/published> ;
+    vann:changes <https://github.com/SPAROntologies/bido/blob/master/CHANGELOG.md> ;
+    vann:preferredNamespacePrefix "bido"@en ;
+    vann:preferredNamespaceUri "http://purl.org/spar/bido"@en ;
+    rdfs:seeAlso <http://www.sparontologies.net/ontologies/bido> ;
+    owl:backwardCompatibleWith bido:2026-08-14 ;
+    owl:imports <http://purl.org/spar/bido-research-career-category>,
+        <http://purl.org/spar/bido-review-measures>,
+        <http://purl.org/spar/bido-standard-bibliometric-measures> ;
+    owl:priorVersion bido:2026-08-14 ;
+    owl:versionIRI bido:2026-10-05 ;
+    owl:versionInfo "1.2.2" ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
+    schema:codeRepository <https://github.com/SPAROntologies/bido> ;
+    schema:image <https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-core.png>,
+        <https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-research-career-category.png>,
+        <https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-review-measures.png>,
+        <https://github.com/SPAROntologies/bido/blob/master/docs/current/bido-standard-bibliometric-measures.png>,
+        <https://github.com/SPAROntologies/bido/blob/master/docs/current/bido.png> ;
+    schema:includedInDataCatalog <https://fairsharing.org/> ;
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,
+        "bibliometric data"@en,
+        "bibliometrics"@en,
+        "scholarly publishing"@en,
+        "scientometrics"@en,
+        "semantic publishing"@en .
